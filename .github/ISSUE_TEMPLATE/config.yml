@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Browse the reading list
+    url: https://github.com/vid-gen/awesome-video-world-model#contents
+    about: Check existing entries before suggesting a paper.
