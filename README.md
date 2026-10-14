@@ -1,148 +1,89 @@
-# Awesome Video World Models
+<div align="center">
+  <a href="https://vid-gen.github.io/video-world-model-survey/"><img src="assets/survey-banner.svg" width="1200" alt="Revisiting Video Foundation Models through the Lens of World Modeling. Reading, Writing, Sharing, and Interacting with the World through Video."></a>
 
-![References](https://img.shields.io/badge/references-652-2f6f5e?style=flat-square) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-2f6f5e?style=flat-square)](CONTRIBUTING.md)
+  <p><strong>A survey and open reference collection</strong></p>
 
-A curated collection of research on **video foundation models and video world models**, covering understanding, generation, unified multimodal models, and learned world dynamics.
+  <a href="https://vid-gen.github.io/video-world-model-survey/"><img src="https://img.shields.io/badge/Explore-project_website-142a36?style=flat-square" alt="Project website"></a>
+  <a href="https://vid-gen.github.io/video-world-model-survey/#library"><img src="https://img.shields.io/badge/References-652-527465?style=flat-square" alt="652 references"></a>
+  <a href="#publication"><img src="https://img.shields.io/badge/Paper-forthcoming-65716e?style=flat-square" alt="Paper forthcoming"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributions-welcome-527465?style=flat-square" alt="Contributions welcome"></a>
 
-Browse the references below directly on GitHub. Each work appears once under its main research area, with a paper or official project link, author, venue, and year. Entries are ordered newest first within each category.
+  <p>Shengqiong Wu<sup>1,*</sup> · Meng Luo<sup>2,*</sup> · Bobo Li<sup>1</sup> · Ziwei Liu<sup>3</sup><br>Shuicheng Yan<sup>2</sup> · Ming-Hsuan Yang<sup>4</sup> · Philip Torr<sup>1</sup> · Hao Fei<sup>1,†</sup></p>
+  <p><sub><sup>1</sup> University of Oxford &nbsp;·&nbsp; <sup>2</sup> National University of Singapore<br><sup>3</sup> Nanyang Technological University &nbsp;·&nbsp; <sup>4</sup> University of California, Merced<br>* Equal contribution &nbsp;·&nbsp; † Project lead & correspondence</sub></p>
+</div>
 
-**Last updated:** October 14, 2026 · [BibTeX](references.bib) · [Contributing](CONTRIBUTING.md)
+## Awesome Video World Models
+
+**[Project website](https://vid-gen.github.io/video-world-model-survey/) · [Search the literature](https://vid-gen.github.io/video-world-model-survey/#library) · [Download BibTeX](references.bib) · [Suggest a paper](https://github.com/vid-gen/awesome-video-world-model/issues/new?template=new-paper.yml)**
+
+Video records only part of a changing world. Our survey, **Revisiting Video Foundation Models through the Lens of World Modeling**, connects video comprehension, generation, unified modeling, and video world models through four operations: **reading, writing, sharing, and interacting**.
+
+This repository brings together the survey's core framework and **652 references**. The complete literature list is directly readable below; the website adds a guided overview, filtering, and BibTeX export. Each work appears once in its primary research area, newest first within each area.
+
+**Updated:** October 14, 2026.
 
 ## Contents
 
-- [World Models and Simulation](#world-models-and-simulation) (114)
-- [Video Understanding and Reasoning](#video-understanding-and-reasoning) (151)
-- [Video Generation and Editing](#video-generation-and-editing) (122)
-- [Unified Multimodal Models](#unified-multimodal-models) (60)
-- [Datasets, Benchmarks and Evaluation](#datasets-benchmarks-and-evaluation) (184)
-- [Surveys and Foundations](#surveys-and-foundations) (21)
-- [BibTeX](#bibtex)
-- [Contributing](#contributing)
+[The survey at a glance](#the-survey-at-a-glance) · [World-model taxonomy](#world-model-taxonomy) · [Evidence and open questions](#evidence-and-open-questions) · [Literature](#literature) · [Publication](#publication) · [Contributing](#contributing)
 
-## World Models and Simulation
+## The survey at a glance
 
-Predictive world models, interactive environments, action-conditioned simulation, spatial memory, robotics, and autonomous driving.
+An **observed video** is a partial, lossy, temporally ordered trace of a **latent temporal world**. A model maintains its own **represented state**, which can be incomplete or wrong. The four operations describe different ways of connecting these objects; one system can perform several operations.
 
-- [Action Forcing: Training World Models on Unsupervised Video by Recovering Underlying Egomotion Bases](https://arxiv.org/abs/2609.30595) — Ashish Sundar et al. *arXiv, 2026*.
-- [Addressable Memory for Video World Models](https://arxiv.org/abs/2608.07408) — Xindi Wu et al. *arXiv, 2026*.
-- [Aero-World: Action-Conditioned Aerial Video Generation from Inertial Controls](https://arxiv.org/abs/2605.19728) — Abdul Mohaimen Al Radi et al. *arXiv, 2026*.
-- [AnchorWeave: World-Consistent Video Generation with Retrieved Local Spatial Memories](https://arxiv.org/abs/2602.14941) — Zun Wang et al. *arXiv, 2026*.
-- [BiWM: Advancing Open-Source Interactive Video World Models with Bidirectional Autoregression](https://arxiv.org/abs/2606.10135) — Shaohao Rui et al. *arXiv, 2026*.
-- [Causal Forcing++: Scalable Few-Step Autoregressive Diffusion Distillation for Real-Time Interactive Video Generation](https://arxiv.org/abs/2605.15141) — Min Zhao et al. *arXiv, 2026*.
-- [Causal Forcing: Autoregressive Diffusion Distillation Done Right for High-Quality Real-Time Interactive Video Generation](https://arxiv.org/abs/2602.02214) — Hongzhou Zhu et al. *arXiv, 2026*.
-- [Causal-JEPA: Learning World Models through Object-Level Latent Masking](https://arxiv.org/abs/2602.11389) — Heejeong Nam et al. *arXiv, 2026*.
-- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](https://arxiv.org/abs/2510.10125) — Yanjiang Guo et al. *arXiv, 2026*.
-- [Delta Forcing: Trust Region Steering for Interactive Autoregressive Video Generation](https://arxiv.org/abs/2605.14382) — Yuheng Wu et al. *arXiv, 2026*.
-- [DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos](https://arxiv.org/abs/2602.06949) — Shenyuan Gao et al. *arXiv, 2026*.
-- [EA-WM: Event-Aware Generative World Model with Structured Kinematic-to-Visual Action Fields](https://arxiv.org/abs/2605.06192) — Zhaoyang Yang et al. *arXiv, 2026*.
-- [Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation](https://arxiv.org/abs/2606.04527) — Yuxuan Bian et al. *arXiv, 2026*.
-- [FLEX-WAM: Flexible Block-Causal World-Action Models for Long-Horizon Imagination and Planning](https://arxiv.org/abs/2610.05483) — R. Khorrambakht et al. *arXiv, 2026*.
-- [GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation](https://arxiv.org/abs/2605.27491) — Boxiang Qiu et al. *arXiv, 2026*.
-- [Geometry-Aware Implicit Memory for Video World Models](https://arxiv.org/abs/2606.02436) — Zhengxuan Wei et al. *arXiv, 2026*.
-- [GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation](https://arxiv.org/abs/2607.02642) — GigaWorld Team et al. *arXiv, 2026*.
-- [H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning](https://arxiv.org/abs/2610.06805) — Wancong Zhang et al. *arXiv, 2026*.
-- [Honeycomb: Constant-Size Scene Memory Representation for Video World Models](https://arxiv.org/abs/2609.37690) — Jack Wei Lun Shi et al. *arXiv, 2026*.
-- [Horizon Imagination: Efficient On-Policy Rollout in Diffusion World Models](https://arxiv.org/abs/2602.08032) — Lior Cohen et al. *ICLR, 2026*.
-- [Keepsake: Selective Spatial Memory for Long-Horizon Video Generation](https://arxiv.org/abs/2610.06588) — Abdul Mohaimen Al Radi et al. *arXiv, 2026*.
-- [LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies](https://arxiv.org/abs/2606.15768) — Jialei Chen et al. *arXiv, 2026*.
-- [LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels](https://arxiv.org/abs/2603.19312) — Lucas Maes et al. *arXiv, 2026*.
-- [Light Forcing: Accelerating Autoregressive Video Diffusion via Sparse Attention](https://arxiv.org/abs/2602.04789) — Chengtao Lv et al. *arXiv, 2026*.
-- [LIVE: Long-horizon Interactive Video World Modeling](https://arxiv.org/abs/2602.03747) — Junchao Huang et al. *arXiv, 2026*.
-- [LiveWorld: Simulating Out-of-Sight Dynamics in Generative Video World Models](https://arxiv.org/abs/2603.07145) — Zicheng Duan et al. *arXiv, 2026*.
-- [Matrix-game 2.0: An open-source real-time and streaming interactive world model](https://arxiv.org/abs/2508.13009) — Xianglong He et al. *arXiv, 2026*.
-- [Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory](https://arxiv.org/abs/2608.29910) — Runjia Qian et al. *arXiv, 2026*.
-- [minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models](https://arxiv.org/abs/2605.30263) — Min Zhao et al. *arXiv, 2026*.
-- [MoWM: Mixture-of-World-Models for Embodied Planning via Latent-to-Pixel Feature Modulation](https://arxiv.org/abs/2509.21797) — Yangcheng Yu et al. *arXiv, 2026*.
-- [MultiWorld: Scalable Multi-Agent Multi-View Video World Models](https://arxiv.org/abs/2604.18564) — Haoyu Wu et al. *arXiv, 2026*.
-- [Next Forcing: Causal World Modeling with Multi-Chunk Prediction](https://arxiv.org/abs/2606.11187) — Gangwei Xu et al. *arXiv, 2026*.
-- [NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation](https://arxiv.org/abs/2606.03159) — Aarti Basant et al. *arXiv, 2026*.
-- [One-Forcing: Towards Stable One-Step Autoregressive Video Generation](https://arxiv.org/abs/2605.23458) — Jiaqi Feng et al. *arXiv, 2026*.
-- [OneWorld: Learning Consistent Physics Across Actions in World Models](https://arxiv.org/abs/2609.30946) — Ke He et al. *arXiv, 2026*.
-- [Phantom: Physics-Infused Video Generation via Joint Modeling of Visual and Latent Physical Dynamics](https://arxiv.org/abs/2604.08503) — Ying Shen et al. *CVPR, 2026*.
-- [PhysMotion: Physics-Grounded Dynamics From a Single Image](https://doi.org/10.1109/3dv69130.2026.00082) — Xiyang Tan et al. *3DV, 2026*.
-- [Solaris: Building a Multiplayer Video World Model in Minecraft](https://arxiv.org/abs/2602.22208) — Georgy Savva et al. *arXiv, 2026*.
-- [SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models](https://arxiv.org/abs/2609.02886) — Junchao Huang et al. *arXiv, 2026*.
-- [Spatial Memory Intelligence: Endowing World Models with Understanding-Driven Long-Term Memory](https://arxiv.org/abs/2610.02521) — Ying Yang et al. *arXiv, 2026*.
-- [Training Object Permanence in World Models](https://arxiv.org/abs/2609.28654) — Haotian Zhang et al. *arXiv, 2026*.
-- [Vid2World: Crafting Video Diffusion Models to Interactive World Models](https://arxiv.org/abs/2505.14357) — Siqiao Huang et al. *arXiv, 2026*.
-- [Video = World + Event Stream](https://arxiv.org/abs/2607.15038) — Lianghua Huang et al. *arXiv, 2026*.
-- [Vidu S1: A Real-Time Interactive Video Generation Model](https://arxiv.org/abs/2607.03118) — Jintao Zhang et al. *arXiv, 2026*.
-- [Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation](https://arxiv.org/abs/2609.11638) — Jintao Zhang et al. *arXiv, 2026*.
-- [Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware](https://arxiv.org/abs/2609.37107) — Rajit Rajpal et al. *arXiv, 2026*.
-- [World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis](https://arxiv.org/abs/2606.05979) — Yi Yang et al. *arXiv, 2026*.
-- [World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy](https://arxiv.org/abs/2602.06508) — Xiaokang Liu et al. *arXiv, 2026*.
-- [WorldCache: Accelerating World Models for Free via Heterogeneous Token Caching](https://arxiv.org/abs/2603.06331) — Weilun Feng et al. *arXiv, 2026*.
-- [WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory](https://arxiv.org/abs/2607.02517) — Hanlin Wang et al. *arXiv, 2026*.
-- [WorldMem: Long-term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369) — Zeqi Xiao et al. *arXiv, 2026*.
-- [X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving](https://arxiv.org/abs/2603.19979) — Chaoda Zheng et al. *arXiv, 2026*.
-- [AdaWorld: Learning Adaptable World Models with Latent Actions](https://arxiv.org/abs/2503.18938) — Shenyuan Gao et al. *ICML, 2025*.
-- [Autoregressive Adversarial Post-Training for Real-Time Interactive Video Generation](https://arxiv.org/abs/2506.09350) — Shanchuan Lin et al. *arXiv, 2025*.
-- [Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://doi.org/10.1145/3757377.3763833) — Jiwen Yu et al. *SIGGRAPH Asia, 2025*.
-- [Cosmos World Foundation Model Platform for Physical AI](https://arxiv.org/abs/2501.03575) — NVIDIA et al. *arXiv, 2025*.
-- [Cosmos-Drive-Dreams: Scalable Synthetic Driving Data Generation with World Foundation Models](https://arxiv.org/abs/2506.09042) — Xuanchi Ren et al. *arXiv, 2025*.
-- [Diffusion Adversarial Post-Training for One-Step Video Generation](https://arxiv.org/abs/2501.08316) — Shanchuan Lin et al. *arXiv, 2025*.
-- [Diffusion Models Are Real-Time Game Engines](https://arxiv.org/abs/2408.14837) — Dani Valevski et al. *ICLR, 2025*.
-- [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](https://arxiv.org/abs/2411.04983) — Gaoyue Zhou et al. *arXiv, 2025*.
-- [DreamGen: Unlocking Generalization in Robot Learning through Video World Models](https://arxiv.org/abs/2505.12705) — Joel Jang et al. *arXiv, 2025*.
-- [FasterCache: Training-Free Video Diffusion Model Acceleration with High Quality](https://arxiv.org/abs/2410.19355) — Zhengyao Lv et al. *arXiv, 2025*.
-- [Frame Context Packing and Drift Prevention in Next-Frame-Prediction Video Diffusion Models](https://arxiv.org/abs/2504.12626) — Lvmin Zhang et al. *arXiv, 2025*.
-- [From Slow Bidirectional to Fast Autoregressive Video Diffusion Models](https://doi.org/10.1109/cvpr52734.2025.02138) — Tianwei Yin et al. *CVPR, 2025*.
-- [GAIA-2: A Controllable Multi-View Generative World Model for Autonomous Driving](https://arxiv.org/abs/2503.20523) — Lloyd Russell et al. *arXiv, 2025*.
-- [GAIA-3: Scaling World Models to Power Safety and Evaluation](https://wayve.ai/thinking/gaia-3/) — Wayve. *Technical report, 2025*.
-- [GameFactory: Creating New Games with Generative Interactive Videos](https://arxiv.org/abs/2501.08325) — Jiwen Yu et al. *arXiv, 2025*.
-- [GigaWorld-0: World Models as Data Engine to Empower Embodied AI](https://arxiv.org/abs/2511.19861) — GigaWorld Team et al. *arXiv, 2025*.
-- [IRASim: A Fine-Grained World Model for Robot Manipulation](https://doi.org/10.1109/iccv51701.2025.00917) — Fangqi Zhu et al. *ICCV, 2025*.
-- [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](https://arxiv.org/abs/2505.11528) — Yuhang Huang et al. *arXiv, 2025*.
-- [Latent Action Learning Requires Supervision in the Presence of Distractors](https://arxiv.org/abs/2502.00379) — Alexander Nikulin et al. *ICML, 2025*.
-- [Latent Action Pretraining from Videos](https://arxiv.org/abs/2410.11758) — Seonghyeon Ye et al. *ICLR, 2025*.
-- [Long-Context State-Space Video World Models](https://arxiv.org/abs/2505.20171) — Ryan Po et al. *arXiv, 2025*.
-- [Matrix-Game: Interactive World Foundation Model](https://arxiv.org/abs/2506.18701) — Yifan Zhang et al. *arXiv, 2025*.
-- [Moto: Latent Motion Token as the Bridging Language for Learning Robot Manipulation from Videos](https://doi.org/10.1109/iccv51701.2025.01837) — Yi Chen et al. *ICCV, 2025*.
-- [PhyGDPO: Physics-Aware Groupwise Direct Preference Optimization for Physically Consistent Text-to-Video Generation](https://arxiv.org/abs/2512.24551) — Yuanhao Cai et al. *arXiv, 2025*.
-- [PhysCtrl: Generative Physics for Controllable and Physics-Grounded Video Generation](https://arxiv.org/abs/2509.20358) — Chen Wang et al. *arXiv, 2025*.
-- [PhysGen3D: Crafting a Miniature Interactive World from a Single Image](https://doi.org/10.1109/cvpr52734.2025.00579) — Boyuan Chen et al. *CVPR, 2025*.
-- [RELIC: Interactive Video World Model with Long-Horizon Memory](https://arxiv.org/abs/2512.04040) — Yicong Hong et al. *arXiv, 2025*.
-- [RoboScape: Physics-Informed Embodied World Model](https://arxiv.org/abs/2506.23135) — Yu Shang et al. *arXiv, 2025*.
-- [Rolling Forcing: Autoregressive Long Video Diffusion in Real Time](https://arxiv.org/abs/2509.25161) — Kunhao Liu et al. *arXiv, 2025*.
-- [Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion](https://arxiv.org/abs/2506.08009) — Xun Huang et al. *arXiv, 2025*.
-- [Timestep Embedding Tells: It's Time to Cache for Video Diffusion Model](https://doi.org/10.1109/cvpr52734.2025.00689) — Feng Liu et al. *CVPR, 2025*.
-- [Training Agents Inside of Scalable World Models](https://arxiv.org/abs/2509.24527) — Danijar Hafner et al. *arXiv, 2025*.
-- [TurboDiffusion: Accelerating Video Diffusion Models by 100-200 Times](https://arxiv.org/abs/2512.16093) — Jintao Zhang et al. *arXiv, 2025*.
-- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985) — Mido Assran et al. *arXiv, 2025*.
-- [Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations](https://arxiv.org/abs/2412.14803) — Yucheng Hu et al. *ICML, 2025*.
-- [Video World Models with Long-term Spatial Memory](https://arxiv.org/abs/2506.05284) — Tong Wu et al. *arXiv, 2025*.
-- [VideoREPA: Learning Physics for Video Generation through Relational Alignment with Foundation Models](https://arxiv.org/abs/2505.23656) — Xiangdong Zhang et al. *arXiv, 2025*.
-- [VMem: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory](https://doi.org/10.1109/iccv51701.2025.02383) — Runjia Li et al. *ICCV, 2025*.
-- [World Models That Know When They Don't Know – Controllable Video Generation with Calibrated Uncertainty](https://arxiv.org/abs/2512.05927) — Zhiting Mei et al. *arXiv, 2025*.
-- [World-in-World: World Models in a Closed-Loop World](https://arxiv.org/abs/2510.18135) — Jiahan Zhang et al. *arXiv, 2025*.
-- [WorldWeaver: Generating Long-Horizon Video Worlds via Rich Perception](https://proceedings.neurips.cc/paper_files/paper/2025/hash/41effeded300e4c99c16f35bb3206fe0-Abstract-Conference.html) — Zhiheng Liu et al. *NeurIPS, 2025*.
-- [Yume-1.5: A Text-Controlled Interactive World Generation Model](https://arxiv.org/abs/2512.22096) — Xiaofeng Mao et al. *arXiv, 2025*.
-- [Diffusion for World Modeling: Visual Details Matter in Atari](https://arxiv.org/abs/2405.12399) — Eloi Alonso et al. *NeurIPS, 2024*.
-- [Diffusion Forcing: Next-token Prediction Meets Full-Sequence Diffusion](https://arxiv.org/abs/2407.01392) — Boyuan Chen et al. *arXiv, 2024*.
-- [DrivingWorld: Constructing World Model for Autonomous Driving via Video GPT](https://arxiv.org/abs/2412.19505) — Xiaotao Hu et al. *arXiv, 2024*.
-- [EVA: An Embodied World Model for Future Video Anticipation](https://arxiv.org/abs/2410.15461) — Xiaowei Chi et al. *arXiv, 2024*.
-- [Genie 2: A Large-Scale Foundation World Model](https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/) — Jack Parker-Holder et al. *Technical report, 2024*.
-- [Genie: Generative Interactive Environments](https://arxiv.org/abs/2402.15391) — Jake Bruce et al. *ICML, 2024*.
-- [IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI](https://arxiv.org/abs/2411.00785) — Xiaoyu Chen et al. *arXiv, 2024*.
-- [iVideoGPT: Interactive VideoGPTs are Scalable World Models](https://arxiv.org/abs/2405.15223) — Jialong Wu et al. *NeurIPS, 2024*.
-- [Learning Interactive Real-World Simulators](https://arxiv.org/abs/2310.06114) — Sherry Yang et al. *ICLR, 2024*.
-- [Learning to Act without Actions](https://arxiv.org/abs/2312.10812) — Dominik Schmidt and Minqi Jiang. *ICLR, 2024*.
-- [Mastering Diverse Domains through World Models](https://arxiv.org/abs/2301.04104) — Danijar Hafner et al. *arXiv, 2024*.
-- [Owl-1: Omni World Model for Consistent Long Video Generation](https://arxiv.org/abs/2412.09600) — Yuanhui Huang et al. *arXiv, 2024*.
-- [Pandora: Towards General World Model with Natural Language Actions and Video States](https://arxiv.org/abs/2406.09455) — Jiannan Xiang et al. *arXiv, 2024*.
-- [PhysGen: Rigid-Body Physics-Grounded Image-to-Video Generation](https://doi.org/10.1007/978-3-031-73007-8_21) — Shaowei Liu et al. *ECCV, 2024*.
-- [RoboDreamer: Learning Compositional World Models for Robot Imagination](https://arxiv.org/abs/2404.12377) — Siyuan Zhou et al. *arXiv, 2024*.
-- [Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability](https://arxiv.org/abs/2405.17398) — Shenyuan Gao et al. *arXiv, 2024*.
-- [GAIA-1: A Generative World Model for Autonomous Driving](https://arxiv.org/abs/2309.17080) — Anthony Hu et al. *arXiv, 2023*.
-- [Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation](https://arxiv.org/abs/2312.13139) — Hongtao Wu et al. *arXiv, 2023*.
-- [Recurrent World Models Facilitate Policy Evolution](https://arxiv.org/abs/1809.01999) — David Ha and Jürgen Schmidhuber. *NeurIPS, 2018*.
-- [Stochastic Variational Video Prediction](https://arxiv.org/abs/1710.11252) — Mohammad Babaeizadeh et al. *ICLR, 2018*.
+| Operation | Core question | The survey covers | References |
+| :--- | :--- | :--- | ---: |
+| 🟡 **[Reading](#reading)** · video comprehension | What world properties can be inferred from the trace? | Tasks and benchmarks; representation learning; Video-LLMs; video agents; applications | 151 |
+| 🔵 **[Writing](#writing)** · video generation | What trace follows from a partial world specification? | Tasks and conditions; latent representations; generative models; control; applications | 122 |
+| 🟢 **[Sharing](#sharing)** · unified video models | How can comprehension and generation support one another? | Unified architectures; learning paradigms; editing and reasoning; cross-direction evaluation | 60 |
+| 🟣 **[Interacting](#interacting)** · video world models | How does state evolve under actions and new observations? | Architectures and training; control and memory; responsiveness and grounding; applications and evaluation | 114 |
 
-[↑ Back to contents](#contents)
+**Supporting collections:** [Datasets, Benchmarks and Evaluation](#evaluation) (184) · [Surveys and Foundations](#foundations) (21).
 
-## Video Understanding and Reasoning
+<p align="center"><a href="https://vid-gen.github.io/video-world-model-survey/#lens"><img src="assets/survey-overview.png" width="1100" alt="The four operations illustrated through a car passing behind a wall: reading infers its state, writing renders video, sharing couples both directions, and interacting changes evolution through controls."></a></p>
 
-Video encoders, representation learning, video-language models, long-video reasoning, streaming perception, and video agents.
+> **Temporal coherence and world consistency are different.** Smooth neighboring frames do not establish persistent identity, layout, physics, or causal responses. A hard cut can break visual smoothness while preserving the world. Neither property implies the other.
+
+## World-model taxonomy
+
+The survey crosses **prediction space** with **transition interface**. The same model can occupy different cells depending on how it is trained and used.
+
+| Prediction space | Passive: no action input | Action-conditioned: fixed controls | Interactive: new controls after feedback |
+| :--- | :--- | :--- | :--- |
+| **Observation space** — frames, video tokens, or video-decoding latents | Forecast video from observed history | Predict controlled video from a supplied action sequence | Advance a visual world after each new control |
+| **Latent state** — video-derived features without required rendering | Predict target features from context | Roll out candidate feature trajectories | Plan, act, observe, and replan |
+
+Predicting generative latents that are decoded into video still counts as observation-space prediction. “Interactive” describes the control interface, not the attention pattern. [Explore the taxonomy →](https://vid-gen.github.io/video-world-model-survey/#world-models)
+
+## Evidence and open questions
+
+Stronger claims require stronger evidence: **plausible output → faithfulness to evidence or conditions → consistent state and controlled cross-direction transfer → decision utility**. For unified models, capability coverage, shared machinery, and functional synergy are distinct claims.
+
+The survey identifies seven connected research problems:
+
+1. **Long-horizon world consistency:** maintain evolving hidden state, not only stored observations.
+2. **Physical and causal grounding:** respond correctly to interventions while preserving unrelated state.
+3. **Measurable synergy:** isolate the contribution of sharing under matched resources.
+4. **Standardized evaluation:** compare world properties under explicit, compatible protocols.
+5. **Control from unlabeled video:** connect observed motion to usable action semantics.
+6. **Scene and embodiment generalization:** test what survives changes in environment, camera, and body.
+7. **Stochastic worlds and rare events:** measure calibrated outcomes, not only sample diversity.
+
+[Read the overview and proposed tests →](https://vid-gen.github.io/video-world-model-survey/#questions)
+
+## Literature
+
+Jump directly to **[Reading](#reading)** · **[Writing](#writing)** · **[Sharing](#sharing)** · **[Interacting](#interacting)** · **[Evaluation](#evaluation)** · **[Foundations](#foundations)**.
+
+Years and venues follow the cited bibliographic records; some records use a preprint year. Categories reflect a work's primary placement and do not imply that its capabilities are restricted to that operation.
+
+<a id="reading"></a>
+<a id="video-understanding-and-reasoning"></a>
+
+## Reading the World
+
+Video comprehension, representation learning, Video-LLMs, long-video reasoning, streaming perception, and video agents. **151 references.**
+
+### 2026
 
 - [A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning](https://arxiv.org/abs/2603.14052) — Yichang Xu et al. *arXiv, 2026*.
 - [Accuracy and Cost Claims Do Not Survive Re-Execution in Agentic VideoQA](https://arxiv.org/abs/2607.01469) — Rama AlHamidi et al. *arXiv, 2026*.
@@ -167,6 +108,8 @@ Video encoders, representation learning, video-language models, long-video reaso
 - [VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding](https://arxiv.org/abs/2607.14935) — Xinhao Li et al. *arXiv, 2026*.
 - [VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning](https://arxiv.org/abs/2601.15724) — Chenglin Li et al. *arXiv, 2026*.
 - [VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294) — Jiarong Liang et al. *arXiv, 2026*.
+### 2025
+
 - [Apollo: An Exploration of Video Understanding in Large Multimodal Models](https://openaccess.thecvf.com/content/CVPR2025/html/Zohar_Apollo__An_Exploration_of_Video_Understanding_in_Large_Multimodal_CVPR_2025_paper.html) — Orr Zohar et al. *CVPR, 2025*.
 - [AViLA: Asynchronous Vision-Language Agent for Streaming Multimodal Data Interaction](https://arxiv.org/abs/2506.18472) — Gengyuan Zhang et al. *arXiv, 2025*.
 - [Deep Video Discovery: Agentic Search with Tool Use for Long-form Video Understanding](https://arxiv.org/abs/2505.18079) — Xiaoyi Zhang et al. *NeurIPS, 2025*.
@@ -222,6 +165,8 @@ Video encoders, representation learning, video-language models, long-video reaso
 - [VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos](https://doi.org/10.1109/cvpr52734.2025.00311) — Ziyang Wang et al. *CVPR, 2025*.
 - [VistaDPO: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models](https://arxiv.org/abs/2504.13122) — Haojian Huang et al. *ICML, 2025*.
 - [WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning](https://arxiv.org/abs/2512.02425) — Woongyeong Yeo et al. *arXiv, 2025*.
+### 2024
+
 - [DriveLM: Driving with Graph Visual Question Answering](https://arxiv.org/abs/2312.14150) — Chonghao Sima et al. *ECCV, 2024*.
 - [Enhancing Video-Language Representations with Structural Spatio-Temporal Alignment](https://doi.org/10.1109/TPAMI.2024.3393452) — Hao Fei et al. *TPAMI, 2024*.
 - [Enhancing Video-LLM Reasoning via Agent-of-Thoughts Distillation](https://arxiv.org/abs/2412.01694) — Yudi Shi et al. *arXiv, 2024*.
@@ -249,6 +194,8 @@ Video encoders, representation learning, video-language models, long-video reaso
 - [VideoLLaMA 2: Advancing Spatial-Temporal Modeling and Audio Understanding in Video-LLMs](https://arxiv.org/abs/2406.07476) — Zesen Cheng et al. *arXiv, 2024*.
 - [VideoLLM-online: Online Video Large Language Model for Streaming Video](https://arxiv.org/abs/2406.11816) — Joya Chen et al. *arXiv, 2024*.
 - [VideoPrism: A Foundational Visual Encoder for Video Understanding](https://arxiv.org/abs/2402.13217) — Long Zhao et al. *arXiv, 2024*.
+### 2023
+
 - [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](https://proceedings.mlr.press/v202/li23q.html) — Junnan Li et al. *ICML, 2023*.
 - [Chat-UniVi: Unified Visual Representation Empowers Large Language Models with Image and Video Understanding](https://arxiv.org/abs/2311.08046) — Peng Jin et al. *arXiv, 2023*.
 - [Honeybee: Locality-enhanced Projector for Multimodal LLM](https://arxiv.org/abs/2312.06742) — Junbum Cha et al. *arXiv, 2023*.
@@ -263,6 +210,8 @@ Video encoders, representation learning, video-language models, long-video reaso
 - [VideoMAE V2: Scaling Video Masked Autoencoders with Dual Masking](https://doi.org/10.1109/cvpr52729.2023.01398) — Limin Wang et al. *CVPR, 2023*.
 - [ViperGPT: Visual Inference via Python Execution for Reasoning](https://arxiv.org/abs/2303.08128) — Dídac Surís et al. *arXiv, 2023*.
 - [Visual Instruction Tuning](https://arxiv.org/abs/2304.08485) — Haotian Liu et al. *arXiv, 2023*.
+### 2022
+
 - [Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions](https://arxiv.org/abs/2111.10337) — Hongwei Xue et al. *CVPR, 2022*.
 - [CLIP4Clip: An empirical study of CLIP for end to end video clip retrieval and captioning](https://doi.org/10.1016/j.neucom.2022.07.028) — Huaishao Luo et al. *Neurocomputing, 2022*.
 - [Flamingo: a Visual Language Model for Few-Shot Learning](https://doi.org/10.52202/068431-1723) — Jean-Baptiste Alayrac et al. *NeurIPS, 2022*.
@@ -277,6 +226,8 @@ Video encoders, representation learning, video-language models, long-video reaso
 - [Visual Programming: Compositional visual reasoning without training](https://arxiv.org/abs/2211.11559) — Tanmay Gupta and Aniruddha Kembhavi. *arXiv, 2022*.
 - [X-CLIP: End-to-End Multi-grained Contrastive Learning for Video-Text Retrieval](https://doi.org/10.1145/3503161.3547910) — Yiwei Ma et al. *ACM MM, 2022*.
 - [XMem: Long-Term Video Object Segmentation with an Atkinson-Shiffrin Memory Model](https://arxiv.org/abs/2207.07115) — Ho Kei Cheng and Alexander G. Schwing. *ECCV, 2022*.
+### 2021
+
 - [A Large-Scale Study on Unsupervised Spatiotemporal Representation Learning](https://doi.org/10.1109/cvpr46437.2021.00331) — Christoph Feichtenhofer et al. *CVPR, 2021*.
 - [Associating Objects with Transformers for Video Object Segmentation](https://arxiv.org/abs/2106.02638) — Zongxin Yang et al. *NeurIPS, 2021*.
 - [Frozen in Time: A Joint Video and Image Encoder for End-to-End Retrieval](https://openaccess.thecvf.com/content/ICCV2021/html/Bain_Frozen_in_Time_A_Joint_Video_and_Image_Encoder_for_ICCV_2021_paper.html) — Max Bain et al. *ICCV, 2021*.
@@ -286,21 +237,32 @@ Video encoders, representation learning, video-language models, long-video reaso
 - [Spatiotemporal Contrastive Video Representation Learning](https://doi.org/10.1109/cvpr46437.2021.00689) — Rui Qian et al. *CVPR, 2021*.
 - [VideoCLIP: Contrastive Pre-training for Zero-shot Video-Text Understanding](https://doi.org/10.18653/v1/2021.emnlp-main.544) — Hu Xu et al. *EMNLP, 2021*.
 - [ViViT: A Video Vision Transformer](https://doi.org/10.1109/iccv48922.2021.00676) — Anurag Arnab et al. *ICCV, 2021*.
+### 2020
+
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://openreview.net/forum?id=YicbFdNTTy) — Alexey Dosovitskiy et al. *ICLR, 2020*.
+### 2019
+
 - [Cross-Task Weakly Supervised Learning from Instructional Videos](https://doi.org/10.1109/cvpr.2019.00365) — Dimitri Zhukov et al. *CVPR, 2019*.
 - [SlowFast Networks for Video Recognition](https://doi.org/10.1109/iccv.2019.00630) — Christoph Feichtenhofer et al. *ICCV, 2019*.
 - [VideoBERT: A Joint Model for Video and Language Representation Learning](https://arxiv.org/abs/1904.01766) — Chen Sun et al. *ICCV, 2019*.
+### 2017
+
 - [Dense-Captioning Events in Videos](https://openaccess.thecvf.com/content_iccv_2017/html/Krishna_Dense-Captioning_Events_in_ICCV_2017_paper.html) — Ranjay Krishna et al. *ICCV, 2017*.
 - [EndoNet: A Deep Architecture for Recognition Tasks on Laparoscopic Videos](https://doi.org/10.1109/tmi.2016.2593957) — Andru P. Twinanda et al. *IEEE Transactions on Medical Imaging, 2017*.
 - [Localizing moments in video with natural language](https://doi.org/10.1109/iccv.2017.618) — Lisa Anne Hendricks et al. *ICCV, 2017*.
 - [Quo vadis, action recognition? a new model and the kinetics dataset](https://doi.org/10.1109/cvpr.2017.502) — Joao Carreira and Andrew Zisserman. *CVPR, 2017*.
 - [TALL: Temporal Activity Localization via Language Query](https://doi.org/10.1109/iccv.2017.563) — Jiyang Gao et al. *ICCV, 2017*.
 
-[↑ Back to contents](#contents)
+[↑ Back to literature](#literature) · [Contents](#contents)
 
-## Video Generation and Editing
+<a id="writing"></a>
+<a id="video-generation-and-editing"></a>
 
-Diffusion, flow, and autoregressive generation; video tokenizers; controllable synthesis; video editing; and audio-video generation.
+## Writing the World
+
+Video generation and editing, latent representations, diffusion, flow and autoregressive models, control strategies, and audio-video synthesis. **122 references.**
+
+### 2026
 
 - [DiCoDe: Diffusion-Compressed Deep Tokens for Autoregressive Video Generation with Language Models](https://arxiv.org/abs/2412.04446) — Yizhuo Li et al. *arXiv, 2026*.
 - [DiVid: Diagnosing Dimension-Specific Diversity Collapse in Video Generation Models](https://arxiv.org/abs/2610.01661) — Huanran Hu et al. *arXiv, 2026*.
@@ -319,6 +281,8 @@ Diffusion, flow, and autoregressive generation; video tokenizers; controllable s
 - [Video2LoRA: Unified Semantic-Controlled Video Generation via Per-Reference-Video LoRA](https://arxiv.org/abs/2603.08210) — Zexi Wu et al. *arXiv, 2026*.
 - [VideoFlexTok: Flexible-Length Coarse-to-Fine Video Tokenization](https://arxiv.org/abs/2604.12887) — Andrei Atanov et al. *arXiv, 2026*.
 - [World-R1: Reinforcing 3D Constraints for Text-to-Video Generation](https://arxiv.org/abs/2604.24764) — Weijie Wang et al. *arXiv, 2026*.
+### 2025
+
 - [Any2Caption:Interpreting Any Condition to Caption for Controllable Video Generation](https://arxiv.org/abs/2503.24379) — Shengqiong Wu et al. *arXiv, 2025*.
 - [Automated Movie Generation via Multi-Agent CoT Planning](https://arxiv.org/abs/2503.07314) — Weijia Wu et al. *arXiv, 2025*.
 - [Autoregressive Video Generation without Vector Quantization](https://arxiv.org/abs/2412.14169) — Haoge Deng et al. *arXiv, 2025*.
@@ -352,6 +316,8 @@ Diffusion, flow, and autoregressive generation; video tokenizers; controllable s
 - [VLOGGER: Multimodal Diffusion for Embodied Avatar Synthesis](https://openaccess.thecvf.com/content/CVPR2025/html/Corona_VLOGGER_Multimodal_Diffusion_for_Embodied_Avatar_Synthesis_CVPR_2025_paper.html) — Enric Corona et al. *CVPR, 2025*.
 - [Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance](https://arxiv.org/abs/2512.08765) — Ruihang Chu et al. *arXiv, 2025*.
 - [Wan: Open and Advanced Large-Scale Video Generative Models](https://arxiv.org/abs/2503.20314) — Team Wan et al. *arXiv, 2025*.
+### 2024
+
 - [Anim-Director: A Large Multimodal Model Powered Agent for Controllable Animation Video Generation](https://doi.org/10.1145/3680528.3687688) — Yunxin Li et al. *SIGGRAPH Asia, 2024*.
 - [Animate anyone: Consistent and controllable image-to-video synthesis for character animation](https://doi.org/10.1109/cvpr52733.2024.00779) — H. Li. *CVPR, 2024*.
 - [Autoregressive Image Generation without Vector Quantization](https://arxiv.org/abs/2406.11838) — Tianhong Li et al. *NeurIPS, 2024*.
@@ -381,6 +347,8 @@ Diffusion, flow, and autoregressive generation; video tokenizers; controllable s
 - [Video-P2P: Video Editing with Cross-Attention Control](https://doi.org/10.1109/cvpr52733.2024.00821) — Shaoteng Liu et al. *CVPR, 2024*.
 - [VideoDirectorGPT: Consistent Multi-Scene Video Generation via LLM-Guided Planning](https://arxiv.org/abs/2309.15091) — Han Lin et al. *First Conference on Language Modeling, 2024*.
 - [VideoPoet: A Large Language Model for Zero-Shot Video Generation](https://arxiv.org/abs/2312.14125) — Dan Kondratyuk et al. *ICML, 2024*.
+### 2023
+
 - [Adding conditional control to text-to-image diffusion models](https://doi.org/10.1109/iccv51070.2023.00355) — Lvmin Zhang et al. *ICCV, 2023*.
 - [Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2304.08818) — Andreas Blattmann et al. *arXiv, 2023*.
 - [An Image Is Worth One Word: Personalizing Text-to-Image Generation Using Textual Inversion](https://arxiv.org/abs/2208.01618) — Rinon Gal et al. *ICLR, 2023*.
@@ -407,6 +375,8 @@ Diffusion, flow, and autoregressive generation; video tokenizers; controllable s
 - [Universal Guidance for Diffusion Models](https://arxiv.org/abs/2302.07121) — Arpit Bansal et al. *arXiv, 2023*.
 - [VideoComposer: Compositional Video Synthesis with Motion Controllability](https://arxiv.org/abs/2306.02018) — Xiang Wang et al. *NeurIPS, 2023*.
 - [VideoControlNet: A Motion-Guided Video-to-Video Translation Framework by Using Diffusion Model with ControlNet](https://arxiv.org/abs/2307.14073) — Zhihao Hu and Dong Xu. *arXiv, 2023*.
+### 2022
+
 - [Autoregressive Image Generation using Residual Quantization](https://doi.org/10.1109/cvpr52688.2022.01123) — Doyup Lee et al. *CVPR, 2022*.
 - [Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2207.12598) — Jonathan Ho and Tim Salimans. *arXiv, 2022*.
 - [High-resolution image synthesis with latent diffusion models](https://doi.org/10.1109/cvpr52688.2022.01042) — Robin Rombach et al. *CVPR, 2022*.
@@ -414,22 +384,37 @@ Diffusion, flow, and autoregressive generation; video tokenizers; controllable s
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) — Edward J. Hu et al. *ICLR, 2022*.
 - [SDEdit: Guided Image Synthesis and Editing with Stochastic Differential Equations](https://arxiv.org/abs/2108.01073) — Chenlin Meng et al. *ICLR, 2022*.
 - [Video diffusion models](https://arxiv.org/abs/2204.03458) — Jonathan Ho et al. *NeurIPS, 2022*.
+### 2021
+
 - [Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502) — Jiaming Song et al. *ICLR, 2021*.
 - [Taming transformers for high-resolution image synthesis](https://doi.org/10.1109/cvpr46437.2021.01268) — Patrick Esser et al. *CVPR, 2021*.
 - [VideoGPT: Video Generation using VQ-VAE and Transformers](https://arxiv.org/abs/2104.10157) — Wilson Yan et al. *arXiv, 2021*.
+### 2020
+
 - [A Lip Sync Expert Is All You Need for Speech to Lip Generation in the Wild](https://doi.org/10.1145/3394171.3413532) — K R Prajwal et al. *ACM MM, 2020*.
 - [Denoising diffusion probabilistic models](https://arxiv.org/abs/2006.11239) — Jonathan Ho et al. *NeurIPS, 2020*.
+### 2018
+
 - [GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium](https://arxiv.org/abs/1706.08500) — Martin Heusel et al. *arXiv, 2018*.
 - [Stereo Magnification: Learning View Synthesis using Multiplane Images](https://arxiv.org/abs/1805.09817) — Tinghui Zhou et al. *arXiv, 2018*.
 - [Stochastic Adversarial Video Prediction](https://arxiv.org/abs/1804.01523) — Alex X. Lee et al. *arXiv, 2018*.
+### 2017
+
 - [Neural discrete representation learning](https://arxiv.org/abs/1711.00937) — Aaron van den Oord et al. *NeurIPS, 2017*.
+### 2016
+
 - [Improved Techniques for Training GANs](https://arxiv.org/abs/1606.03498) — Tim Salimans et al. *arXiv, 2016*.
 
-[↑ Back to contents](#contents)
+[↑ Back to literature](#literature) · [Contents](#contents)
 
-## Unified Multimodal Models
+<a id="sharing"></a>
+<a id="unified-multimodal-models"></a>
 
-Models that combine understanding, generation, and editing, with shared representations, joint learning, or multimodal reasoning.
+## Sharing the World
+
+Unified understanding and generation through shared tokens, continuous representations, modular interfaces, joint learning, and generative reasoning. **60 references.**
+
+### 2026
 
 - [Beyond Language Modeling: An Exploration of Multimodal Pretraining](https://arxiv.org/abs/2603.03276) — Shengbang Tong et al. *arXiv, 2026*.
 - [Bridging Video Understanding and Generation in a Unified Framework](https://arxiv.org/abs/2606.31326) — Yuqi Wang et al. *arXiv, 2026*.
@@ -460,6 +445,8 @@ Models that combine understanding, generation, and editing, with shared represen
 - [UniVideo: Unified Understanding, Generation, and Editing for Videos](https://arxiv.org/abs/2510.08377) — Cong Wei et al. *arXiv, 2026*.
 - [UniWAM: Unified World-Action Model](https://arxiv.org/abs/2610.02054) — Wenxuan Song et al. *arXiv, 2026*.
 - [VideoAgent: All-in-One Framework for Video Understanding and Editing](https://arxiv.org/abs/2606.23327) — Hengji Zhou et al. *arXiv, 2026*.
+### 2025
+
 - [AToken: A Unified Tokenizer for Vision](https://arxiv.org/abs/2509.14476) — Jiasen Lu et al. *arXiv, 2025*.
 - [Chameleon: Mixed-Modal Early-Fusion Foundation Models](https://arxiv.org/abs/2405.09818) — Chameleon Team. *arXiv, 2025*.
 - [Divot: Diffusion Powers Video Tokenizer for Comprehension and Generation](https://doi.org/10.1109/cvpr52734.2025.01270) — Yuying Ge et al. *CVPR, 2025*.
@@ -481,22 +468,167 @@ Models that combine understanding, generation, and editing, with shared represen
 - [VideoAgent: Self-Improving Video Generation](https://arxiv.org/abs/2410.10076) — Achint Soni et al. *arXiv, 2025*.
 - [VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation](https://arxiv.org/abs/2409.04429) — Yecheng Wu et al. *arXiv, 2025*.
 - [VISTA: A Test-Time Self-Improving Video Generation Agent](https://arxiv.org/abs/2510.15831) — Do Xuan Long et al. *arXiv, 2025*.
+### 2024
+
 - [Emu3: Next-Token Prediction is All You Need](https://arxiv.org/abs/2409.18869) — Xinlong Wang et al. *arXiv, 2024*.
 - [Generative Multimodal Models are In-Context Learners](https://arxiv.org/abs/2312.13286) — Quan Sun et al. *CVPR, 2024*.
 - [GPT4Video: A Unified Multimodal Large Language Model for Instruction-Followed Understanding and Safety-Aware Generation](https://doi.org/10.1145/3664647.3681464) — Zhanyu Wang et al. *ACM MM, 2024*.
 - [NExT-GPT: Any-to-Any Multimodal LLM](https://arxiv.org/abs/2309.05519) — Shengqiong Wu et al. *ICML, 2024*.
 - [Show-o: One Single Transformer to Unify Multimodal Understanding and Generation](https://arxiv.org/abs/2408.12528) — Jinheng Xie et al. *arXiv, 2024*.
 - [Video-LaVIT: Unified Video-Language Pre-training with Decoupled Visual-Motional Tokenization](https://arxiv.org/abs/2402.03161) — Yang Jin et al. *arXiv, 2024*.
+### 2023
+
 - [DreamLLM: Synergistic Multimodal Comprehension and Creation](https://arxiv.org/abs/2309.11499) — Runpei Dong et al. *arXiv, 2023*.
 - [Generating Images with Multimodal Language Models](https://arxiv.org/abs/2305.17216) — Jing Yu Koh et al. *arXiv, 2023*.
 - [Making LLaMA SEE and Draw with SEED Tokenizer](https://arxiv.org/abs/2310.01218) — Yuying Ge et al. *arXiv, 2023*.
+### 2020
+
 - [UniVL: A Unified Video and Language Pre-Training Model for Multimodal Understanding and Generation](https://arxiv.org/abs/2002.06353) — Huaishao Luo et al. *arXiv, 2020*.
 
-[↑ Back to contents](#contents)
+[↑ Back to literature](#literature) · [Contents](#contents)
+
+<a id="interacting"></a>
+<a id="world-models-and-simulation"></a>
+
+## Interacting with the World
+
+Video world models, action-conditioned prediction, interactive simulation, persistent memory, physical grounding, planning, robotics, and driving. **114 references.**
+
+### 2026
+
+- [Action Forcing: Training World Models on Unsupervised Video by Recovering Underlying Egomotion Bases](https://arxiv.org/abs/2609.30595) — Ashish Sundar et al. *arXiv, 2026*.
+- [Addressable Memory for Video World Models](https://arxiv.org/abs/2608.07408) — Xindi Wu et al. *arXiv, 2026*.
+- [Aero-World: Action-Conditioned Aerial Video Generation from Inertial Controls](https://arxiv.org/abs/2605.19728) — Abdul Mohaimen Al Radi et al. *arXiv, 2026*.
+- [AnchorWeave: World-Consistent Video Generation with Retrieved Local Spatial Memories](https://arxiv.org/abs/2602.14941) — Zun Wang et al. *arXiv, 2026*.
+- [BiWM: Advancing Open-Source Interactive Video World Models with Bidirectional Autoregression](https://arxiv.org/abs/2606.10135) — Shaohao Rui et al. *arXiv, 2026*.
+- [Causal Forcing++: Scalable Few-Step Autoregressive Diffusion Distillation for Real-Time Interactive Video Generation](https://arxiv.org/abs/2605.15141) — Min Zhao et al. *arXiv, 2026*.
+- [Causal Forcing: Autoregressive Diffusion Distillation Done Right for High-Quality Real-Time Interactive Video Generation](https://arxiv.org/abs/2602.02214) — Hongzhou Zhu et al. *arXiv, 2026*.
+- [Causal-JEPA: Learning World Models through Object-Level Latent Masking](https://arxiv.org/abs/2602.11389) — Heejeong Nam et al. *arXiv, 2026*.
+- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](https://arxiv.org/abs/2510.10125) — Yanjiang Guo et al. *arXiv, 2026*.
+- [Delta Forcing: Trust Region Steering for Interactive Autoregressive Video Generation](https://arxiv.org/abs/2605.14382) — Yuheng Wu et al. *arXiv, 2026*.
+- [DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos](https://arxiv.org/abs/2602.06949) — Shenyuan Gao et al. *arXiv, 2026*.
+- [EA-WM: Event-Aware Generative World Model with Structured Kinematic-to-Visual Action Fields](https://arxiv.org/abs/2605.06192) — Zhaoyang Yang et al. *arXiv, 2026*.
+- [Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation](https://arxiv.org/abs/2606.04527) — Yuxuan Bian et al. *arXiv, 2026*.
+- [FLEX-WAM: Flexible Block-Causal World-Action Models for Long-Horizon Imagination and Planning](https://arxiv.org/abs/2610.05483) — R. Khorrambakht et al. *arXiv, 2026*.
+- [GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation](https://arxiv.org/abs/2605.27491) — Boxiang Qiu et al. *arXiv, 2026*.
+- [Geometry-Aware Implicit Memory for Video World Models](https://arxiv.org/abs/2606.02436) — Zhengxuan Wei et al. *arXiv, 2026*.
+- [GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation](https://arxiv.org/abs/2607.02642) — GigaWorld Team et al. *arXiv, 2026*.
+- [H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning](https://arxiv.org/abs/2610.06805) — Wancong Zhang et al. *arXiv, 2026*.
+- [Honeycomb: Constant-Size Scene Memory Representation for Video World Models](https://arxiv.org/abs/2609.37690) — Jack Wei Lun Shi et al. *arXiv, 2026*.
+- [Horizon Imagination: Efficient On-Policy Rollout in Diffusion World Models](https://arxiv.org/abs/2602.08032) — Lior Cohen et al. *ICLR, 2026*.
+- [Keepsake: Selective Spatial Memory for Long-Horizon Video Generation](https://arxiv.org/abs/2610.06588) — Abdul Mohaimen Al Radi et al. *arXiv, 2026*.
+- [LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies](https://arxiv.org/abs/2606.15768) — Jialei Chen et al. *arXiv, 2026*.
+- [LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels](https://arxiv.org/abs/2603.19312) — Lucas Maes et al. *arXiv, 2026*.
+- [Light Forcing: Accelerating Autoregressive Video Diffusion via Sparse Attention](https://arxiv.org/abs/2602.04789) — Chengtao Lv et al. *arXiv, 2026*.
+- [LIVE: Long-horizon Interactive Video World Modeling](https://arxiv.org/abs/2602.03747) — Junchao Huang et al. *arXiv, 2026*.
+- [LiveWorld: Simulating Out-of-Sight Dynamics in Generative Video World Models](https://arxiv.org/abs/2603.07145) — Zicheng Duan et al. *arXiv, 2026*.
+- [Matrix-game 2.0: An open-source real-time and streaming interactive world model](https://arxiv.org/abs/2508.13009) — Xianglong He et al. *arXiv, 2026*.
+- [Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory](https://arxiv.org/abs/2608.29910) — Runjia Qian et al. *arXiv, 2026*.
+- [minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models](https://arxiv.org/abs/2605.30263) — Min Zhao et al. *arXiv, 2026*.
+- [MoWM: Mixture-of-World-Models for Embodied Planning via Latent-to-Pixel Feature Modulation](https://arxiv.org/abs/2509.21797) — Yangcheng Yu et al. *arXiv, 2026*.
+- [MultiWorld: Scalable Multi-Agent Multi-View Video World Models](https://arxiv.org/abs/2604.18564) — Haoyu Wu et al. *arXiv, 2026*.
+- [Next Forcing: Causal World Modeling with Multi-Chunk Prediction](https://arxiv.org/abs/2606.11187) — Gangwei Xu et al. *arXiv, 2026*.
+- [NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation](https://arxiv.org/abs/2606.03159) — Aarti Basant et al. *arXiv, 2026*.
+- [One-Forcing: Towards Stable One-Step Autoregressive Video Generation](https://arxiv.org/abs/2605.23458) — Jiaqi Feng et al. *arXiv, 2026*.
+- [OneWorld: Learning Consistent Physics Across Actions in World Models](https://arxiv.org/abs/2609.30946) — Ke He et al. *arXiv, 2026*.
+- [Phantom: Physics-Infused Video Generation via Joint Modeling of Visual and Latent Physical Dynamics](https://arxiv.org/abs/2604.08503) — Ying Shen et al. *CVPR, 2026*.
+- [PhysMotion: Physics-Grounded Dynamics From a Single Image](https://doi.org/10.1109/3dv69130.2026.00082) — Xiyang Tan et al. *3DV, 2026*.
+- [Solaris: Building a Multiplayer Video World Model in Minecraft](https://arxiv.org/abs/2602.22208) — Georgy Savva et al. *arXiv, 2026*.
+- [SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models](https://arxiv.org/abs/2609.02886) — Junchao Huang et al. *arXiv, 2026*.
+- [Spatial Memory Intelligence: Endowing World Models with Understanding-Driven Long-Term Memory](https://arxiv.org/abs/2610.02521) — Ying Yang et al. *arXiv, 2026*.
+- [Training Object Permanence in World Models](https://arxiv.org/abs/2609.28654) — Haotian Zhang et al. *arXiv, 2026*.
+- [Vid2World: Crafting Video Diffusion Models to Interactive World Models](https://arxiv.org/abs/2505.14357) — Siqiao Huang et al. *arXiv, 2026*.
+- [Video = World + Event Stream](https://arxiv.org/abs/2607.15038) — Lianghua Huang et al. *arXiv, 2026*.
+- [Vidu S1: A Real-Time Interactive Video Generation Model](https://arxiv.org/abs/2607.03118) — Jintao Zhang et al. *arXiv, 2026*.
+- [Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation](https://arxiv.org/abs/2609.11638) — Jintao Zhang et al. *arXiv, 2026*.
+- [Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware](https://arxiv.org/abs/2609.37107) — Rajit Rajpal et al. *arXiv, 2026*.
+- [World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis](https://arxiv.org/abs/2606.05979) — Yi Yang et al. *arXiv, 2026*.
+- [World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy](https://arxiv.org/abs/2602.06508) — Xiaokang Liu et al. *arXiv, 2026*.
+- [WorldCache: Accelerating World Models for Free via Heterogeneous Token Caching](https://arxiv.org/abs/2603.06331) — Weilun Feng et al. *arXiv, 2026*.
+- [WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory](https://arxiv.org/abs/2607.02517) — Hanlin Wang et al. *arXiv, 2026*.
+- [WorldMem: Long-term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369) — Zeqi Xiao et al. *arXiv, 2026*.
+- [X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving](https://arxiv.org/abs/2603.19979) — Chaoda Zheng et al. *arXiv, 2026*.
+### 2025
+
+- [AdaWorld: Learning Adaptable World Models with Latent Actions](https://arxiv.org/abs/2503.18938) — Shenyuan Gao et al. *ICML, 2025*.
+- [Autoregressive Adversarial Post-Training for Real-Time Interactive Video Generation](https://arxiv.org/abs/2506.09350) — Shanchuan Lin et al. *arXiv, 2025*.
+- [Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://doi.org/10.1145/3757377.3763833) — Jiwen Yu et al. *SIGGRAPH Asia, 2025*.
+- [Cosmos World Foundation Model Platform for Physical AI](https://arxiv.org/abs/2501.03575) — NVIDIA et al. *arXiv, 2025*.
+- [Cosmos-Drive-Dreams: Scalable Synthetic Driving Data Generation with World Foundation Models](https://arxiv.org/abs/2506.09042) — Xuanchi Ren et al. *arXiv, 2025*.
+- [Diffusion Adversarial Post-Training for One-Step Video Generation](https://arxiv.org/abs/2501.08316) — Shanchuan Lin et al. *arXiv, 2025*.
+- [Diffusion Models Are Real-Time Game Engines](https://arxiv.org/abs/2408.14837) — Dani Valevski et al. *ICLR, 2025*.
+- [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](https://arxiv.org/abs/2411.04983) — Gaoyue Zhou et al. *arXiv, 2025*.
+- [DreamGen: Unlocking Generalization in Robot Learning through Video World Models](https://arxiv.org/abs/2505.12705) — Joel Jang et al. *arXiv, 2025*.
+- [FasterCache: Training-Free Video Diffusion Model Acceleration with High Quality](https://arxiv.org/abs/2410.19355) — Zhengyao Lv et al. *arXiv, 2025*.
+- [Frame Context Packing and Drift Prevention in Next-Frame-Prediction Video Diffusion Models](https://arxiv.org/abs/2504.12626) — Lvmin Zhang et al. *arXiv, 2025*.
+- [From Slow Bidirectional to Fast Autoregressive Video Diffusion Models](https://doi.org/10.1109/cvpr52734.2025.02138) — Tianwei Yin et al. *CVPR, 2025*.
+- [GAIA-2: A Controllable Multi-View Generative World Model for Autonomous Driving](https://arxiv.org/abs/2503.20523) — Lloyd Russell et al. *arXiv, 2025*.
+- [GAIA-3: Scaling World Models to Power Safety and Evaluation](https://wayve.ai/thinking/gaia-3/) — Wayve. *Technical report, 2025*.
+- [GameFactory: Creating New Games with Generative Interactive Videos](https://arxiv.org/abs/2501.08325) — Jiwen Yu et al. *arXiv, 2025*.
+- [GigaWorld-0: World Models as Data Engine to Empower Embodied AI](https://arxiv.org/abs/2511.19861) — GigaWorld Team et al. *arXiv, 2025*.
+- [IRASim: A Fine-Grained World Model for Robot Manipulation](https://doi.org/10.1109/iccv51701.2025.00917) — Fangqi Zhu et al. *ICCV, 2025*.
+- [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](https://arxiv.org/abs/2505.11528) — Yuhang Huang et al. *arXiv, 2025*.
+- [Latent Action Learning Requires Supervision in the Presence of Distractors](https://arxiv.org/abs/2502.00379) — Alexander Nikulin et al. *ICML, 2025*.
+- [Latent Action Pretraining from Videos](https://arxiv.org/abs/2410.11758) — Seonghyeon Ye et al. *ICLR, 2025*.
+- [Long-Context State-Space Video World Models](https://arxiv.org/abs/2505.20171) — Ryan Po et al. *arXiv, 2025*.
+- [Matrix-Game: Interactive World Foundation Model](https://arxiv.org/abs/2506.18701) — Yifan Zhang et al. *arXiv, 2025*.
+- [Moto: Latent Motion Token as the Bridging Language for Learning Robot Manipulation from Videos](https://doi.org/10.1109/iccv51701.2025.01837) — Yi Chen et al. *ICCV, 2025*.
+- [PhyGDPO: Physics-Aware Groupwise Direct Preference Optimization for Physically Consistent Text-to-Video Generation](https://arxiv.org/abs/2512.24551) — Yuanhao Cai et al. *arXiv, 2025*.
+- [PhysCtrl: Generative Physics for Controllable and Physics-Grounded Video Generation](https://arxiv.org/abs/2509.20358) — Chen Wang et al. *arXiv, 2025*.
+- [PhysGen3D: Crafting a Miniature Interactive World from a Single Image](https://doi.org/10.1109/cvpr52734.2025.00579) — Boyuan Chen et al. *CVPR, 2025*.
+- [RELIC: Interactive Video World Model with Long-Horizon Memory](https://arxiv.org/abs/2512.04040) — Yicong Hong et al. *arXiv, 2025*.
+- [RoboScape: Physics-Informed Embodied World Model](https://arxiv.org/abs/2506.23135) — Yu Shang et al. *arXiv, 2025*.
+- [Rolling Forcing: Autoregressive Long Video Diffusion in Real Time](https://arxiv.org/abs/2509.25161) — Kunhao Liu et al. *arXiv, 2025*.
+- [Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion](https://arxiv.org/abs/2506.08009) — Xun Huang et al. *arXiv, 2025*.
+- [Timestep Embedding Tells: It's Time to Cache for Video Diffusion Model](https://doi.org/10.1109/cvpr52734.2025.00689) — Feng Liu et al. *CVPR, 2025*.
+- [Training Agents Inside of Scalable World Models](https://arxiv.org/abs/2509.24527) — Danijar Hafner et al. *arXiv, 2025*.
+- [TurboDiffusion: Accelerating Video Diffusion Models by 100-200 Times](https://arxiv.org/abs/2512.16093) — Jintao Zhang et al. *arXiv, 2025*.
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985) — Mido Assran et al. *arXiv, 2025*.
+- [Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations](https://arxiv.org/abs/2412.14803) — Yucheng Hu et al. *ICML, 2025*.
+- [Video World Models with Long-term Spatial Memory](https://arxiv.org/abs/2506.05284) — Tong Wu et al. *arXiv, 2025*.
+- [VideoREPA: Learning Physics for Video Generation through Relational Alignment with Foundation Models](https://arxiv.org/abs/2505.23656) — Xiangdong Zhang et al. *arXiv, 2025*.
+- [VMem: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory](https://doi.org/10.1109/iccv51701.2025.02383) — Runjia Li et al. *ICCV, 2025*.
+- [World Models That Know When They Don't Know – Controllable Video Generation with Calibrated Uncertainty](https://arxiv.org/abs/2512.05927) — Zhiting Mei et al. *arXiv, 2025*.
+- [World-in-World: World Models in a Closed-Loop World](https://arxiv.org/abs/2510.18135) — Jiahan Zhang et al. *arXiv, 2025*.
+- [WorldWeaver: Generating Long-Horizon Video Worlds via Rich Perception](https://proceedings.neurips.cc/paper_files/paper/2025/hash/41effeded300e4c99c16f35bb3206fe0-Abstract-Conference.html) — Zhiheng Liu et al. *NeurIPS, 2025*.
+- [Yume-1.5: A Text-Controlled Interactive World Generation Model](https://arxiv.org/abs/2512.22096) — Xiaofeng Mao et al. *arXiv, 2025*.
+### 2024
+
+- [Diffusion for World Modeling: Visual Details Matter in Atari](https://arxiv.org/abs/2405.12399) — Eloi Alonso et al. *NeurIPS, 2024*.
+- [Diffusion Forcing: Next-token Prediction Meets Full-Sequence Diffusion](https://arxiv.org/abs/2407.01392) — Boyuan Chen et al. *arXiv, 2024*.
+- [DrivingWorld: Constructing World Model for Autonomous Driving via Video GPT](https://arxiv.org/abs/2412.19505) — Xiaotao Hu et al. *arXiv, 2024*.
+- [EVA: An Embodied World Model for Future Video Anticipation](https://arxiv.org/abs/2410.15461) — Xiaowei Chi et al. *arXiv, 2024*.
+- [Genie 2: A Large-Scale Foundation World Model](https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/) — Jack Parker-Holder et al. *Technical report, 2024*.
+- [Genie: Generative Interactive Environments](https://arxiv.org/abs/2402.15391) — Jake Bruce et al. *ICML, 2024*.
+- [IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI](https://arxiv.org/abs/2411.00785) — Xiaoyu Chen et al. *arXiv, 2024*.
+- [iVideoGPT: Interactive VideoGPTs are Scalable World Models](https://arxiv.org/abs/2405.15223) — Jialong Wu et al. *NeurIPS, 2024*.
+- [Learning Interactive Real-World Simulators](https://arxiv.org/abs/2310.06114) — Sherry Yang et al. *ICLR, 2024*.
+- [Learning to Act without Actions](https://arxiv.org/abs/2312.10812) — Dominik Schmidt and Minqi Jiang. *ICLR, 2024*.
+- [Mastering Diverse Domains through World Models](https://arxiv.org/abs/2301.04104) — Danijar Hafner et al. *arXiv, 2024*.
+- [Owl-1: Omni World Model for Consistent Long Video Generation](https://arxiv.org/abs/2412.09600) — Yuanhui Huang et al. *arXiv, 2024*.
+- [Pandora: Towards General World Model with Natural Language Actions and Video States](https://arxiv.org/abs/2406.09455) — Jiannan Xiang et al. *arXiv, 2024*.
+- [PhysGen: Rigid-Body Physics-Grounded Image-to-Video Generation](https://doi.org/10.1007/978-3-031-73007-8_21) — Shaowei Liu et al. *ECCV, 2024*.
+- [RoboDreamer: Learning Compositional World Models for Robot Imagination](https://arxiv.org/abs/2404.12377) — Siyuan Zhou et al. *arXiv, 2024*.
+- [Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability](https://arxiv.org/abs/2405.17398) — Shenyuan Gao et al. *arXiv, 2024*.
+### 2023
+
+- [GAIA-1: A Generative World Model for Autonomous Driving](https://arxiv.org/abs/2309.17080) — Anthony Hu et al. *arXiv, 2023*.
+- [Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation](https://arxiv.org/abs/2312.13139) — Hongtao Wu et al. *arXiv, 2023*.
+### 2018
+
+- [Recurrent World Models Facilitate Policy Evolution](https://arxiv.org/abs/1809.01999) — David Ha and Jürgen Schmidhuber. *NeurIPS, 2018*.
+- [Stochastic Variational Video Prediction](https://arxiv.org/abs/1710.11252) — Mohammad Babaeizadeh et al. *ICLR, 2018*.
+
+[↑ Back to literature](#literature) · [Contents](#contents)
+
+<a id="evaluation"></a>
+<a id="datasets-benchmarks-and-evaluation"></a>
 
 ## Datasets, Benchmarks and Evaluation
 
-Training datasets, understanding and generation benchmarks, world-model evaluation, perceptual metrics, and decision-oriented evaluation.
+Training data, understanding and generation benchmarks, evaluation of world properties, perceptual metrics, and decision-oriented protocols. **184 references.**
+
+### 2026
 
 - [Action100M: A Large-scale Video Action Dataset](https://arxiv.org/abs/2601.10592) — Delong Chen et al. *arXiv, 2026*.
 - [AgentVidBench: A Multi-Hop Video Question Answering Benchmark for Evaluating MLLM Agents](https://arxiv.org/abs/2609.21386) — Seoyeon An et al. *arXiv, 2026*.
@@ -566,6 +698,8 @@ Training datasets, understanding and generation benchmarks, world-model evaluati
 - [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](https://arxiv.org/abs/2604.21686) — Xiaojie Xu et al. *arXiv, 2026*.
 - [WorldOlympiad: Can Your World Model Survive a Triathlon?](https://arxiv.org/abs/2606.11129) — Yuke Zhao et al. *arXiv, 2026*.
 - [WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models](https://arxiv.org/abs/2606.31672) — Ting-Bing Xu et al. *arXiv, 2026*.
+### 2025
+
 - [A Shortcut-aware Video-QA Benchmark for Physical Understanding via Minimal Video Pairs](https://arxiv.org/abs/2506.09987) — Benno Krojer et al. *arXiv, 2025*.
 - [ARGUS: Hallucination and Omission Evaluation in Video-LLMs](https://arxiv.org/abs/2506.07371) — Ruchit Rawal et al. *arXiv, 2025*.
 - [Benchmarking Scientific Understanding and Reasoning for Video Generation using VideoScience-Bench](https://arxiv.org/abs/2512.02942) — Lanxiang Hu et al. *arXiv, 2025*.
@@ -611,6 +745,8 @@ Training datasets, understanding and generation benchmarks, world-model evaluati
 - [WorldModelBench: Judging Video Generation Models As World Models](https://arxiv.org/abs/2502.20694) — Dacheng Li et al. *arXiv, 2025*.
 - [WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning](https://arxiv.org/abs/2506.04363) — Delong Chen et al. *arXiv, 2025*.
 - [WorldScore: A Unified Evaluation Benchmark for World Generation](https://doi.org/10.1109/iccv51701.2025.02573) — Haoyi Duan et al. *ICCV, 2025*.
+### 2024
+
 - [ACT-Bench: Towards Action Controllable World Models for Autonomous Driving](https://arxiv.org/abs/2412.05337) — Hidehisa Arai et al. *arXiv, 2024*.
 - [Beyond FVD: Enhanced Evaluation Metrics for Video Generation Quality](https://arxiv.org/abs/2410.05203) — Ge Ya Luo et al. *arXiv, 2024*.
 - [ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation](https://arxiv.org/abs/2406.18522) — Shenghai Yuan et al. *arXiv, 2024*.
@@ -636,18 +772,26 @@ Training datasets, understanding and generation benchmarks, world-model evaluati
 - [VideoPhy: Evaluating Physical Commonsense for Video Generation](https://arxiv.org/abs/2406.03520) — Hritik Bansal et al. *arXiv, 2024*.
 - [VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation](https://arxiv.org/abs/2406.15252) — Xuan He et al. *arXiv, 2024*.
 - [WorldSimBench: Towards Video Generation Models as World Simulators](https://arxiv.org/abs/2410.18072) — Yiran Qin et al. *arXiv, 2024*.
+### 2023
+
 - [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](https://arxiv.org/abs/2308.09126) — Karttikeya Mangalam et al. *NeurIPS, 2023*.
 - [FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation](https://arxiv.org/abs/2311.01813) — Yuanxin Liu et al. *arXiv, 2023*.
 - [MeViS: A Large-scale Benchmark for Video Segmentation with Motion Expressions](https://doi.org/10.1109/iccv51070.2023.00254) — Henghui Ding et al. *ICCV, 2023*.
+### 2022
+
 - [Ego4D: Around the World in 3,000 Hours of Egocentric Video](https://doi.org/10.1109/cvpr52688.2022.01842) — Kristen Grauman et al. *CVPR, 2022*.
 - [Evaluating Long-Term Memory in 3D Mazes](https://arxiv.org/abs/2210.13383) — Jurgis Pasukonis et al. *arXiv, 2022*.
 - [Rescaling egocentric vision: Collection, pipeline and challenges for epic-kitchens-100](https://arxiv.org/abs/2006.13256) — Dima Damen et al. *IJCV, 2022*.
+### 2021
+
 - [CLIPScore: A Reference-free Evaluation Metric for Image Captioning](https://doi.org/10.18653/v1/2021.emnlp-main.595) — Jack Hessel et al. *EMNLP, 2021*.
 - [NExT-QA: Next Phase of Question-Answering to Explaining Temporal Actions](https://doi.org/10.1109/cvpr46437.2021.00965) — Junbin Xiao et al. *CVPR, 2021*.
 - [Physion: Evaluating Physical Prediction from Vision in Humans and Machines](https://arxiv.org/abs/2106.08261) — Daniel M. Bear et al. *NeurIPS, 2021*.
 - [QVHighlights: Detecting Moments and Highlights in Videos via Natural Language Queries](https://arxiv.org/abs/2107.09609) — Jie Lei et al. *NeurIPS, 2021*.
 - [SoccerNet-v2: A Dataset and Benchmarks for Holistic Understanding of Broadcast Soccer Videos](https://doi.org/10.1109/cvprw53098.2021.00508) — Adrien Deliege et al. *CVPR Workshops, 2021*.
 - [STAR: A Benchmark for Situated Reasoning in Real-World Videos](https://arxiv.org/abs/2405.09711) — Bo Wu et al. *NeurIPS, 2021*.
+### 2020
+
 - [BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning](https://doi.org/10.1109/cvpr42600.2020.00271) — Fisher Yu et al. *CVPR, 2020*.
 - [CLEVRER: Collision Events for Video Representation and Reasoning](https://arxiv.org/abs/1910.01442) — Kexin Yi et al. *ICLR, 2020*.
 - [IntPhys: A Framework and Benchmark for Visual Intuitive Physics Reasoning](https://arxiv.org/abs/1803.07616) — Ronan Riochet et al. *arXiv, 2020*.
@@ -656,12 +800,16 @@ Training datasets, understanding and generation benchmarks, world-model evaluati
 - [URVOS: Unified Referring Video Object Segmentation Network with a Large-Scale Benchmark](https://doi.org/10.1007/978-3-030-58555-6_13) — Seonguk Seo et al. *ECCV, 2020*.
 - [VGGSound: A Large-scale Audio-Visual Dataset](https://doi.org/10.1109/icassp40776.2020.9053174) — Honglie Chen et al. *ICASSP, 2020*.
 - [Where Does It Exist: Spatio-Temporal Video Grounding for Multi-Form Sentences](https://doi.org/10.1109/cvpr42600.2020.01068) — Zhu Zhang et al. *CVPR, 2020*.
+### 2019
+
 - [ActivityNet-QA: A Dataset for Understanding Complex Web Videos via Question Answering](https://doi.org/10.1609/aaai.v33i01.33019127) — Zhou Yu et al. *AAAI, 2019*.
 - [COIN: A Large-scale Dataset for Comprehensive Instructional Video Analysis](https://doi.org/10.1109/cvpr.2019.00130) — Yansong Tang et al. *CVPR, 2019*.
 - [HowTo100M: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips](https://openaccess.thecvf.com/content_ICCV_2019/html/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.html) — Antoine Miech et al. *ICCV, 2019*.
 - [LaSOT: A High-quality Benchmark for Large-scale Single Object Tracking](https://doi.org/10.1109/cvpr.2019.00552) — Heng Fan et al. *CVPR, 2019*.
 - [Towards Accurate Generative Models of Video: A New Metric & Challenges](https://arxiv.org/abs/1812.01717) — Thomas Unterthiner et al. *arXiv, 2019*.
 - [VaTeX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research](https://doi.org/10.1109/iccv.2019.00468) — Xin Wang et al. *ICCV, 2019*.
+### 2018
+
 - [A Note on the Inception Score](https://arxiv.org/abs/1801.01973) — Shane Barratt and Rishi Sharma. *arXiv, 2018*.
 - [Audio-Visual Event Localization in Unconstrained Videos](https://doi.org/10.1007/978-3-030-01216-8_16) — Yapeng Tian et al. *ECCV, 2018*.
 - [Fréchet Audio Distance: A Metric for Evaluating Music Enhancement Algorithms](https://arxiv.org/abs/1812.08466) — Kevin Kilgour et al. *arXiv, 2018*.
@@ -671,58 +819,97 @@ Training datasets, understanding and generation benchmarks, world-model evaluati
 - [Towards Automatic Learning of Procedures from Web Instructional Videos](https://doi.org/10.1609/aaai.v32i1.12342) — Luowei Zhou et al. *AAAI, 2018*.
 - [TVQA: Localized, Compositional Video Question Answering](https://aclanthology.org/D18-1167/) — Jie Lei et al. *EMNLP, 2018*.
 - [YouTube-VOS: A Large-Scale Video Object Segmentation Benchmark](https://arxiv.org/abs/1809.03327) — Ning Xu et al. *arXiv, 2018*.
+### 2017
+
 - [Audio Set: An Ontology and Human-Labeled Dataset for Audio Events](https://doi.org/10.1109/icassp.2017.7952261) — Jort F. Gemmeke et al. *ICASSP, 2017*.
 - [TGIF-QA: Toward Spatio-Temporal Reasoning in Visual Question Answering](https://doi.org/10.1109/cvpr.2017.149) — Yunseok Jang et al. *CVPR, 2017*.
 - [The Kinetics Human Action Video Dataset](https://arxiv.org/abs/1705.06950) — Will Kay et al. *arXiv, 2017*.
 - [The THUMOS Challenge on Action Recognition for Videos “in the Wild”](https://doi.org/10.1016/j.cviu.2016.10.018) — Haroon Idrees et al. *Computer Vision and Image Understanding, 2017*.
 - [The" something something" video database for learning and evaluating visual common sense](https://doi.org/10.1109/iccv.2017.622) — Raghav Goyal et al. *ICCV, 2017*.
+### 2016
+
 - [MOT16: A Benchmark for Multi-Object Tracking](https://arxiv.org/abs/1603.00831) — Anton Milan et al. *arXiv, 2016*.
 - [MSR-VTT: A Large Video Description Dataset for Bridging Video and Language](https://openaccess.thecvf.com/content_cvpr_2016/html/Xu_MSR-VTT_A_Large_CVPR_2016_paper.html) — Jun Xu et al. *CVPR, 2016*.
+### 2015
+
 - [ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding](https://doi.org/10.1109/cvpr.2015.7298698) — Fabian Caba Heilbron et al. *CVPR, 2015*.
+### 2012
+
 - [UCF101: A Dataset of 101 Human Actions Classes From Videos in The Wild](https://arxiv.org/abs/1212.0402) — Khurram Soomro et al. *arXiv, 2012*.
+### 2011
+
 - [HMDB: a large video database for human motion recognition](https://doi.org/10.1109/iccv.2011.6126543) — H. Kuehne et al. *ICCV, 2011*.
+### 2004
+
 - [Image Quality Assessment: From Error Visibility to Structural Similarity](https://doi.org/10.1109/TIP.2003.819861) — Zhou Wang et al. *IEEE Transactions on Image Processing, 2004*.
 
-[↑ Back to contents](#contents)
+[↑ Back to literature](#literature) · [Contents](#contents)
+
+<a id="foundations"></a>
+<a id="surveys-and-foundations"></a>
 
 ## Surveys and Foundations
 
-Survey articles, conceptual foundations, and general modeling methods that support video and world-model research.
+Related surveys, conceptual foundations, and general modeling methods that support video and world-model research. **21 references.**
+
+### 2026
 
 - [A Definition and Roadmap for World Models](https://arxiv.org/abs/2607.06401) — Xinyuan Chen et al. *arXiv, 2026*.
 - [Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends](https://arxiv.org/abs/2606.01164) — Jiuming Liu et al. *arXiv, 2026*.
 - [Unified Multimodal Understanding and Generation Models: Advances, Challenges, and Opportunities](https://arxiv.org/abs/2505.02567) — Shanshan Zhao et al. *arXiv, 2026*.
+### 2025
+
 - [3D and 4D World Modeling: A Survey](https://arxiv.org/abs/2509.07996) — Lingdong Kong et al. *arXiv, 2025*.
+### 2024
+
 - [A survey on long video generation: Challenges, methods, and prospects](https://arxiv.org/abs/2403.16407) — Chengxuan Li et al. *arXiv, 2024*.
 - [Is Sora a World Simulator? A Comprehensive Survey on General World Models and Beyond](https://arxiv.org/abs/2405.03520) — Zheng Zhu et al. *arXiv, 2024*.
 - [Understanding World or Predicting Future? A Comprehensive Survey of World Models](https://arxiv.org/abs/2411.14499) — Jingtao Ding et al. *arXiv, 2024*.
+### 2023
+
 - [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549) — Shukang Yin et al. *arXiv, 2023*.
 - [A Survey on Video Diffusion Models](https://arxiv.org/abs/2310.10647) — Zhen Xing et al. *arXiv, 2023*.
 - [LLaMA: Open and Efficient Foundation Language Models](https://arxiv.org/abs/2302.13971) — Hugo Touvron et al. *arXiv, 2023*.
 - [Video Understanding with Large Language Models: A Survey](https://arxiv.org/abs/2312.17432) — Yolo Y. Tang et al. *arXiv, 2023*.
+### 2022
+
 - [A Path Towards Autonomous Machine Intelligence](https://openreview.net/forum?id=BZ5a1r-kVsf) — Yann LeCun. *Technical report, 2022*.
 - [Finetuned Language Models are Zero-Shot Learners](https://arxiv.org/abs/2109.01652) — Jason Wei et al. *ICLR, 2022*.
 - [Masked autoencoders are scalable vision learners](https://doi.org/10.1109/cvpr52688.2022.01553) — Kaiming He et al. *CVPR, 2022*.
 - [MaskGIT: Masked Generative Image Transformer](https://doi.org/10.1109/cvpr52688.2022.01103) — Huiwen Chang et al. *CVPR, 2022*.
+### 2021
+
 - [Perceiver: General Perception with Iterative Attention](https://arxiv.org/abs/2103.03206) — Andrew Jaegle et al. *ICML, 2021*.
+### 2020
+
 - [Generative adversarial networks](https://doi.org/10.1145/3422622) — Ian Goodfellow et al. *Communications of the ACM, 2020*.
+### 2017
+
 - [Attention is all you need](https://arxiv.org/abs/1706.03762) — Ashish Vaswani et al. *NeurIPS, 2017*.
+### 2015
+
 - [Deep unsupervised learning using nonequilibrium thermodynamics](https://arxiv.org/abs/1503.03585) — Jascha Sohl-Dickstein et al. *ICML, 2015*.
+### 2013
+
 - [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) — Diederik P Kingma and Max Welling. *arXiv, 2013*.
+### 1982
+
 - [Vision: A Computational Investigation into the Human Representation and Processing of Visual Information](https://mitpress.mit.edu/9780262514620/vision/) — David Marr. *Book, 1982*.
 
-[↑ Back to contents](#contents)
+[↑ Back to literature](#literature) · [Contents](#contents)
+
+## Publication
+
+The survey manuscript is forthcoming. The framework and reference collection are available now; the paper link and final citation will be added when released.
 
 ## BibTeX
 
-[Download the bibliography](references.bib) for all 652 listed works. Years and publication venues follow the cited records; some records use a preprint year.
+[Download `references.bib`](references.bib) for all 652 listed works. The [website](https://vid-gen.github.io/video-world-model-survey/#library) also supports single-reference copying and filtered BibTeX downloads. Public bibliographic metadata is available in [JSON](data/references.json).
 
 ## Contributing
 
-Paper suggestions and corrections are welcome. Read the [contribution guide](CONTRIBUTING.md), [suggest a paper](https://github.com/vid-gen/awesome-video-world-model/issues/new?template=new-paper.yml), or open a focused pull request.
-
-Please provide a stable paper link and accurate bibliographic metadata, and check the list for existing entries before submitting.
+Relevant papers, corrected metadata, and category suggestions are welcome. Read the [contribution guide](CONTRIBUTING.md), [suggest a paper](https://github.com/vid-gen/awesome-video-world-model/issues/new?template=new-paper.yml), or open a focused pull request.
 
 ## Acknowledgements
 
-Thanks to the researchers and open-source communities whose papers, datasets, benchmarks, and systems make this collection possible.
+Thanks to the researchers and open-source communities whose work makes this survey and reference collection possible.

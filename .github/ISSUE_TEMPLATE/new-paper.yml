@@ -34,10 +34,10 @@ body:
     attributes:
       label: Main category
       options:
-        - World Models and Simulation
-        - Video Understanding and Reasoning
-        - Video Generation and Editing
-        - Unified Multimodal Models
+        - Reading the World (video comprehension)
+        - Writing the World (video generation)
+        - Sharing the World (unified video models)
+        - Interacting with the World (video world models)
         - Datasets, Benchmarks and Evaluation
         - Surveys and Foundations
     validations:

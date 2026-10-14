@@ -16,13 +16,13 @@ the most complete or authoritative version of a work once.
 
 ## Categories
 
-- **World Models and Simulation** — predictive dynamics, action-conditioned and
-  interactive environments, memory, planning, robotics, and driving.
-- **Video Understanding and Reasoning** — perception, representations,
+- **Reading the World** — video comprehension, perception, representations,
   video-language models, long-video reasoning, streaming, and video agents.
-- **Video Generation and Editing** — synthesis, tokenizers, controllability,
+- **Writing the World** — video generation, synthesis, tokenizers, controllability,
   editing, and audio-video generation.
-- **Unified Multimodal Models** — joint understanding, generation, and editing.
+- **Sharing the World** — unified understanding, generation, and editing.
+- **Interacting with the World** — predictive dynamics, action-conditioned and
+  interactive environments, memory, planning, robotics, and driving.
 - **Datasets, Benchmarks and Evaluation** — training data, task benchmarks,
   quality metrics, and world-model or decision evaluation.
 - **Surveys and Foundations** — surveys, conceptual foundations, and general
@@ -44,6 +44,17 @@ year. Update the category and total counts when adding or removing entries.
 For source links, prefer a publisher landing page, DOI, ACL Anthology, OpenReview,
 arXiv abstract page, or official project page. Use authoritative metadata for any
 BibTeX entry added to `references.bib`. Avoid search-results URLs.
+
+Keep the matching record in `data/references.json` synchronized with the bullet
+and BibTeX entry. This is public bibliographic metadata only; do not add local
+source paths, editorial notes, or unpublished manuscript files. Category keys are
+`understanding`, `generation`, `unified`, `world-models`, `evaluation`, and
+`background`, respectively.
+
+The companion website lives in
+[`vid-gen/video-world-model-survey`](https://github.com/vid-gen/video-world-model-survey).
+Maintainers can update its catalog snapshot and bibliography with the sync command
+documented there. Readers do not need to install or run anything.
 
 Explain corrections in the pull-request description, especially if multiple
 versions have different titles, dates, or publication venues.
