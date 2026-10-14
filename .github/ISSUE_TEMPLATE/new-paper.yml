@@ -17,6 +17,11 @@ body:
     validations:
       required: true
   - type: input
+    id: resource_urls
+    attributes:
+      label: Official code, project, or dataset links (optional)
+      description: Include author-maintained resources for this exact paper/version; omit unavailable links.
+  - type: input
     id: authors
     attributes:
       label: Authors

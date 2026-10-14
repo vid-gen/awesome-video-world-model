@@ -1528,7 +1528,12 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2605.03941",
       "category": "evaluation",
-      "bibtex": "@misc{fang2026iworldbench,\n  title         = {iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework},\n  author        = {Jianjie Fang and Yingshan Lei and Qin Wan and Ziyou Wang and Yuchao Huang and Yongyan Xu and Baining Zhao and Weichen Zhang and Chen Gao and Xinlei Chen and Yong Li},\n  year          = {2026},\n  eprint        = {2605.03941},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2605.03941}\n}"
+      "bibtex": "@misc{fang2026iworldbench,\n  title         = {iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework},\n  author        = {Jianjie Fang and Yingshan Lei and Qin Wan and Ziyou Wang and Yuchao Huang and Yongyan Xu and Baining Zhao and Weichen Zhang and Chen Gao and Xinlei Chen and Yong Li},\n  year          = {2026},\n  eprint        = {2605.03941},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2605.03941}\n}",
+      "resources": {
+        "code": "https://github.com/EmbodiedCity/iWorld-Bench",
+        "project": "https://iworld-bench.com/",
+        "data": "https://huggingface.co/datasets/EmbodiedCity/iWorld-Bench-Dataset"
+      }
     },
     {
       "key": "liu2026javisditpp",
@@ -2160,7 +2165,10 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2605.30263",
       "category": "world-models",
-      "bibtex": "@misc{zhao2026minwm,\n  title         = {minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models},\n  author        = {Min Zhao and Hongzhou Zhu and Bokai Yan and Zihan Zhou and Yimin Chen and Wenqiang Sun and Kaiwen Zheng and Guande He and Xiao Yang and Chongxuan Li and Fan Bao and Jun Zhu},\n  year          = {2026},\n  eprint        = {2605.30263},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2605.30263}\n}"
+      "bibtex": "@misc{zhao2026minwm,\n  title         = {minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models},\n  author        = {Min Zhao and Hongzhou Zhu and Bokai Yan and Zihan Zhou and Yimin Chen and Wenqiang Sun and Kaiwen Zheng and Guande He and Xiao Yang and Chongxuan Li and Fan Bao and Jun Zhu},\n  year          = {2026},\n  eprint        = {2605.30263},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2605.30263}\n}",
+      "resources": {
+        "code": "https://github.com/shengshu-ai/minWM"
+      }
     },
     {
       "key": "yang2026mirabench",
@@ -3131,7 +3139,11 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2609.02886",
       "category": "world-models",
-      "bibtex": "@misc{huang2026solarwm,\n\ttitle = {SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models},\n\tauthor = {Junchao Huang and Guian Fang and Shengju Qian and Xianghao Kong and Zhuoran Zhao and Wei Huang and Yihua Du and Zixin Zhang and Justin Cui and Yuchao Gu and Yukang Chen and Xinting Hu and Tianyu He and Shaoshuai Shi and Zhuotao Tian and Xin Wang and Mike Zheng Shou and Li Jiang},\n\tyear = {2026},\n\teprint = {2609.02886},\n\tarchivePrefix = {arXiv},\n\tprimaryClass = {cs.CV},\n\turl = {https://arxiv.org/abs/2609.02886}\n}"
+      "bibtex": "@misc{huang2026solarwm,\n\ttitle = {SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models},\n\tauthor = {Junchao Huang and Guian Fang and Shengju Qian and Xianghao Kong and Zhuoran Zhao and Wei Huang and Yihua Du and Zixin Zhang and Justin Cui and Yuchao Gu and Yukang Chen and Xinting Hu and Tianyu He and Shaoshuai Shi and Zhuotao Tian and Xin Wang and Mike Zheng Shou and Li Jiang},\n\tyear = {2026},\n\teprint = {2609.02886},\n\tarchivePrefix = {arXiv},\n\tprimaryClass = {cs.CV},\n\turl = {https://arxiv.org/abs/2609.02886}\n}",
+      "resources": {
+        "code": "https://github.com/Junchao-cs/SolarWM",
+        "project": "https://junchao-cs.github.io/SolarWM-Web/"
+      }
     },
     {
       "key": "yang2026smi",
@@ -4237,7 +4249,10 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2609.37107",
       "category": "world-models",
-      "bibtex": "@misc{rajpal2026waypoint15,\n\ttitle = {Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware},\n\tauthor = {Rajit Rajpal and Shahbuland Matiana and Liew Wei Pyn and Anmol Agarwal and Ryan Craig and Andrew Lapp and Mithun Hunsur and Sami BuGhanem and Scottie Fox and Aaron Sanders and Carson Poole and Irene Park and Dave Rossi and Spencer Frazier and Louis Castricato},\n\tyear = {2026},\n\teprint = {2609.37107},\n\tarchivePrefix = {arXiv},\n\tprimaryClass = {cs.CV},\n\turl = {https://arxiv.org/abs/2609.37107}\n}"
+      "bibtex": "@misc{rajpal2026waypoint15,\n\ttitle = {Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware},\n\tauthor = {Rajit Rajpal and Shahbuland Matiana and Liew Wei Pyn and Anmol Agarwal and Ryan Craig and Andrew Lapp and Mithun Hunsur and Sami BuGhanem and Scottie Fox and Aaron Sanders and Carson Poole and Irene Park and Dave Rossi and Spencer Frazier and Louis Castricato},\n\tyear = {2026},\n\teprint = {2609.37107},\n\tarchivePrefix = {arXiv},\n\tprimaryClass = {cs.CV},\n\turl = {https://arxiv.org/abs/2609.37107}\n}",
+      "resources": {
+        "code": "https://github.com/Overworldai/world_engine"
+      }
     },
     {
       "key": "ying2026wbench",
@@ -4321,7 +4336,12 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2603.23497",
       "category": "evaluation",
-      "bibtex": "@misc{wildworld2026,\n\ttitle = {WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG},\n\tauthor = {Zhen Li and Zian Meng and Shuwei Shi and Wenshuo Peng and Yuwei Wu and Bo Zheng and Chuanhao Li and Kaipeng Zhang},\n\tyear = {2026},\n\teprint = {2603.23497},\n\tarchivePrefix = {arXiv},\n\tprimaryClass = {cs.CV},\n\turl = {https://arxiv.org/abs/2603.23497}\n}"
+      "bibtex": "@misc{wildworld2026,\n\ttitle = {WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG},\n\tauthor = {Zhen Li and Zian Meng and Shuwei Shi and Wenshuo Peng and Yuwei Wu and Bo Zheng and Chuanhao Li and Kaipeng Zhang},\n\tyear = {2026},\n\teprint = {2603.23497},\n\tarchivePrefix = {arXiv},\n\tprimaryClass = {cs.CV},\n\turl = {https://arxiv.org/abs/2603.23497}\n}",
+      "resources": {
+        "code": "https://github.com/AlayaLab/WildWorld",
+        "project": "https://alaya-studio.github.io/wildworld-project/",
+        "data": "https://huggingface.co/datasets/AlayaLab/WildWorld"
+      }
     },
     {
       "key": "liu2026worldembedding",
@@ -4565,7 +4585,11 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2604.21686",
       "category": "evaluation",
-      "bibtex": "@misc{xu2026worldmark,\n  title         = {WorldMark: A Unified Benchmark Suite for Interactive Video World Models},\n  author        = {Xiaojie Xu and Zhengyuan Lin and Kang He and Yukang Feng and Xiaofeng Mao and Yuanyang Yin and Kaipeng Zhang and Yongtao Ge},\n  year          = {2026},\n  eprint        = {2604.21686},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2604.21686}\n}"
+      "bibtex": "@misc{xu2026worldmark,\n  title         = {WorldMark: A Unified Benchmark Suite for Interactive Video World Models},\n  author        = {Xiaojie Xu and Zhengyuan Lin and Kang He and Yukang Feng and Xiaofeng Mao and Yuanyang Yin and Kaipeng Zhang and Yongtao Ge},\n  year          = {2026},\n  eprint        = {2604.21686},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2604.21686}\n}",
+      "resources": {
+        "code": "https://github.com/AlayaLab/WorldMark",
+        "project": "https://alayalab.github.io/WorldMark/"
+      }
     },
     {
       "key": "xiao2025worldmem",
@@ -4607,7 +4631,12 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2606.11129",
       "category": "evaluation",
-      "bibtex": "@misc{worldolympiad2026,\n  title         = {WorldOlympiad: Can Your World Model Survive a Triathlon?},\n  author        = {Yuke Zhao and Wangbo Zhao and Weijie Wang and Zeyu Zhang and Dakai An and Akide Liu and Yinghao Yu and Jiasheng Tang and Fan Wang and Wei Wang and Bohan Zhuang},\n  year          = {2026},\n  eprint        = {2606.11129},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2606.11129}\n}"
+      "bibtex": "@misc{worldolympiad2026,\n  title         = {WorldOlympiad: Can Your World Model Survive a Triathlon?},\n  author        = {Yuke Zhao and Wangbo Zhao and Weijie Wang and Zeyu Zhang and Dakai An and Akide Liu and Yinghao Yu and Jiasheng Tang and Fan Wang and Wei Wang and Bohan Zhuang},\n  year          = {2026},\n  eprint        = {2606.11129},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2606.11129}\n}",
+      "resources": {
+        "code": "https://github.com/alibaba-damo-academy/WorldOlympiad",
+        "project": "https://alibaba-damo-academy.github.io/WorldOlympiad",
+        "data": "https://huggingface.co/datasets/ziplab/WorldOlympiad"
+      }
     },
     {
       "key": "worldroambench2026",
@@ -5976,7 +6005,11 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2504.12626",
       "category": "world-models",
-      "bibtex": "@misc{zhang2025framepack,\n  title         = {Frame Context Packing and Drift Prevention in Next-Frame-Prediction Video Diffusion Models},\n  author        = {Lvmin Zhang and Shengqu Cai and Muyang Li and Gordon Wetzstein and Maneesh Agrawala},\n  year          = {2025},\n  eprint        = {2504.12626},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2504.12626}\n}"
+      "bibtex": "@misc{zhang2025framepack,\n  title         = {Frame Context Packing and Drift Prevention in Next-Frame-Prediction Video Diffusion Models},\n  author        = {Lvmin Zhang and Shengqu Cai and Muyang Li and Gordon Wetzstein and Maneesh Agrawala},\n  year          = {2025},\n  eprint        = {2504.12626},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2504.12626}\n}",
+      "resources": {
+        "code": "https://github.com/lllyasviel/FramePack",
+        "project": "https://lllyasviel.github.io/frame_pack_gitpage/"
+      }
     },
     {
       "key": "he2025framethinker",
@@ -6013,7 +6046,11 @@
       "venue": "CVPR",
       "url": "https://doi.org/10.1109/cvpr52734.2025.02138",
       "category": "world-models",
-      "bibtex": "@inproceedings{yin2025causvid,\n  title     = {From Slow Bidirectional to Fast Autoregressive Video Diffusion Models},\n  author    = {Yin, Tianwei and Zhang, Qiang and Zhang, Richard and Freeman, William T. and Durand, Frédo and Shechtman, Eli and Huang, Xun},\n  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n  pages     = {22963--22974},\n  year      = {2025},\n  doi       = {10.1109/cvpr52734.2025.02138},\n  url       = {https://doi.org/10.1109/cvpr52734.2025.02138}\n}"
+      "bibtex": "@inproceedings{yin2025causvid,\n  title     = {From Slow Bidirectional to Fast Autoregressive Video Diffusion Models},\n  author    = {Yin, Tianwei and Zhang, Qiang and Zhang, Richard and Freeman, William T. and Durand, Frédo and Shechtman, Eli and Huang, Xun},\n  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n  pages     = {22963--22974},\n  year      = {2025},\n  doi       = {10.1109/cvpr52734.2025.02138},\n  url       = {https://doi.org/10.1109/cvpr52734.2025.02138}\n}",
+      "resources": {
+        "code": "https://github.com/tianweiy/CausVid",
+        "project": "https://causvid.github.io/"
+      }
     },
     {
       "key": "fulldit2025",
@@ -6084,7 +6121,12 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2501.08325",
       "category": "world-models",
-      "bibtex": "@misc{gamefactory2025,\n  title         = {GameFactory: Creating New Games with Generative Interactive Videos},\n  author        = {Jiwen Yu and Yiran Qin and Xintao Wang and Pengfei Wan and Di Zhang and Xihui Liu},\n  year          = {2025},\n  eprint        = {2501.08325},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2501.08325}\n}"
+      "bibtex": "@misc{gamefactory2025,\n  title         = {GameFactory: Creating New Games with Generative Interactive Videos},\n  author        = {Jiwen Yu and Yiran Qin and Xintao Wang and Pengfei Wan and Di Zhang and Xihui Liu},\n  year          = {2025},\n  eprint        = {2501.08325},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2501.08325}\n}",
+      "resources": {
+        "code": "https://github.com/KlingAIResearch/GameFactory",
+        "project": "https://yujiwen.github.io/gamefactory/",
+        "data": "https://huggingface.co/datasets/KwaiVGI/GameFactory-Dataset"
+      }
     },
     {
       "key": "gigaworld2025",
@@ -6938,7 +6980,11 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2506.18701",
       "category": "world-models",
-      "bibtex": "@misc{zhang2025matrixgame,\n  title         = {Matrix-Game: Interactive World Foundation Model},\n  author        = {Yifan Zhang and Chunli Peng and Boyang Wang and Puyi Wang and Qingcheng Zhu and Fei Kang and Biao Jiang and Zedong Gao and Eric Li and Yang Liu and Yahui Zhou},\n  year          = {2025},\n  eprint        = {2506.18701},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2506.18701}\n}"
+      "bibtex": "@misc{zhang2025matrixgame,\n  title         = {Matrix-Game: Interactive World Foundation Model},\n  author        = {Yifan Zhang and Chunli Peng and Boyang Wang and Puyi Wang and Qingcheng Zhu and Fei Kang and Biao Jiang and Zedong Gao and Eric Li and Yang Liu and Yahui Zhou},\n  year          = {2025},\n  eprint        = {2506.18701},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2506.18701}\n}",
+      "resources": {
+        "code": "https://github.com/SkyworkAI/Matrix-Game/tree/main/Matrix-Game-1",
+        "project": "https://matrix-game-homepage.github.io/"
+      }
     },
     {
       "key": "tong2025mjvideo",
@@ -8327,7 +8373,11 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2506.08009",
       "category": "world-models",
-      "bibtex": "@misc{selfforcing2025,\n  title         = {Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion},\n  author        = {Xun Huang and Zhengqi Li and Guande He and Mingyuan Zhou and Eli Shechtman},\n  year          = {2025},\n  eprint        = {2506.08009},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2506.08009}\n}"
+      "bibtex": "@misc{selfforcing2025,\n  title         = {Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion},\n  author        = {Xun Huang and Zhengqi Li and Guande He and Mingyuan Zhou and Eli Shechtman},\n  year          = {2025},\n  eprint        = {2506.08009},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2506.08009}\n}",
+      "resources": {
+        "code": "https://github.com/guandeh17/Self-Forcing",
+        "project": "https://self-forcing.github.io"
+      }
     },
     {
       "key": "xie2025show",
@@ -9860,7 +9910,11 @@
       "venue": "ICCV",
       "url": "https://doi.org/10.1109/iccv51701.2025.02383",
       "category": "world-models",
-      "bibtex": "@inproceedings{li2025vmem,\n  title     = {{VMem}: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory},\n  author    = {Li, Runjia and Torr, Philip and Vedaldi, Andrea and Jakab, Tomas},\n  booktitle = {IEEE/CVF International Conference on Computer Vision (ICCV)},\n  pages     = {25690--25699},\n  year      = {2025},\n  doi       = {10.1109/iccv51701.2025.02383},\n  url       = {https://doi.org/10.1109/iccv51701.2025.02383}\n}"
+      "bibtex": "@inproceedings{li2025vmem,\n  title     = {{VMem}: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory},\n  author    = {Li, Runjia and Torr, Philip and Vedaldi, Andrea and Jakab, Tomas},\n  booktitle = {IEEE/CVF International Conference on Computer Vision (ICCV)},\n  pages     = {25690--25699},\n  year      = {2025},\n  doi       = {10.1109/iccv51701.2025.02383},\n  url       = {https://doi.org/10.1109/iccv51701.2025.02383}\n}",
+      "resources": {
+        "code": "https://github.com/runjiali-rl/vmem",
+        "project": "https://v-mem.github.io/"
+      }
     },
     {
       "key": "chu2025wanmove",
@@ -10175,7 +10229,11 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2512.22096",
       "category": "world-models",
-      "bibtex": "@misc{yume2025,\n  title         = {Yume-1.5: A Text-Controlled Interactive World Generation Model},\n  author        = {Xiaofeng Mao and Zhen Li and Chuanhao Li and Xiaojie Xu and Kaining Ying and Tong He and Jiangmiao Pang and Yu Qiao and Kaipeng Zhang},\n  year          = {2025},\n  eprint        = {2512.22096},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2512.22096}\n}"
+      "bibtex": "@misc{yume2025,\n  title         = {Yume-1.5: A Text-Controlled Interactive World Generation Model},\n  author        = {Xiaofeng Mao and Zhen Li and Chuanhao Li and Xiaojie Xu and Kaining Ying and Tong He and Jiangmiao Pang and Yu Qiao and Kaipeng Zhang},\n  year          = {2025},\n  eprint        = {2512.22096},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2512.22096}\n}",
+      "resources": {
+        "code": "https://github.com/stdstu12/YUME",
+        "project": "https://stdstu12.github.io/YUME-Project/"
+      }
     },
     {
       "key": "li2024survey",
@@ -10356,7 +10414,11 @@
       "venue": "NeurIPS",
       "url": "https://arxiv.org/abs/2405.12399",
       "category": "world-models",
-      "bibtex": "@inproceedings{alonso2024diamond,\n  title     = {Diffusion for World Modeling: Visual Details Matter in Atari},\n  author    = {Eloi Alonso and Adam Jelley and Vincent Micheli and Anssi Kanervisto and Amos Storkey and Tim Pearce and François Fleuret},\n  booktitle = {Advances in Neural Information Processing Systems},\n  year      = {2024},\n  url       = {https://arxiv.org/abs/2405.12399}\n}"
+      "bibtex": "@inproceedings{alonso2024diamond,\n  title     = {Diffusion for World Modeling: Visual Details Matter in Atari},\n  author    = {Eloi Alonso and Adam Jelley and Vincent Micheli and Anssi Kanervisto and Amos Storkey and Tim Pearce and François Fleuret},\n  booktitle = {Advances in Neural Information Processing Systems},\n  year      = {2024},\n  url       = {https://arxiv.org/abs/2405.12399}\n}",
+      "resources": {
+        "code": "https://github.com/eloialonso/diamond",
+        "project": "https://diamond-wm.github.io"
+      }
     },
     {
       "key": "chen2024diffusionforcing",
@@ -10374,7 +10436,11 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2407.01392",
       "category": "world-models",
-      "bibtex": "@misc{chen2024diffusionforcing,\n  title         = {Diffusion Forcing: Next-token Prediction Meets Full-Sequence Diffusion},\n  author        = {Boyuan Chen and Diego Marti Monso and Yilun Du and Max Simchowitz and Russ Tedrake and Vincent Sitzmann},\n  year          = {2024},\n  eprint        = {2407.01392},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.LG},\n  url           = {https://arxiv.org/abs/2407.01392}\n}"
+      "bibtex": "@misc{chen2024diffusionforcing,\n  title         = {Diffusion Forcing: Next-token Prediction Meets Full-Sequence Diffusion},\n  author        = {Boyuan Chen and Diego Marti Monso and Yilun Du and Max Simchowitz and Russ Tedrake and Vincent Sitzmann},\n  year          = {2024},\n  eprint        = {2407.01392},\n  archiveprefix = {arXiv},\n  primaryclass  = {cs.LG},\n  url           = {https://arxiv.org/abs/2407.01392}\n}",
+      "resources": {
+        "code": "https://github.com/buoyancy99/diffusion-forcing",
+        "project": "https://boyuan.space/diffusion-forcing"
+      }
     },
     {
       "key": "ling2024dl3dv",
