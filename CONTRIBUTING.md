@@ -68,6 +68,14 @@ and BibTeX entry. Supplemental links go in an optional `resources` object, with
 author-maintained page, and link to the matching release when a repository hosts
 several versions. The primary `url` field remains the paper's source link.
 
+Keep the corresponding entry in `data/resource-verification.json` synchronized.
+Record the author/paper source for each resource and any version-specific branch,
+directory, or snapshot. A repository with only a release announcement, images,
+or a “coming soon” README is not released code. Author-owned forks can be valid
+when the paper explicitly links them; an unrelated fork or third-party
+reimplementation is not an official resource. An unverified entry is left blank
+in the reading list; it does not assert that no resource exists.
+
 This is public bibliographic metadata only; do not add local
 source paths, editorial notes, or unpublished manuscript files. Category keys are
 `understanding`, `generation`, `unified`, `world-models`, `evaluation`, and
