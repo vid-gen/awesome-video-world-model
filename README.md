@@ -1,5 +1,7 @@
 <div align="center">
-  <a href="https://vid-gen.github.io/video-world-model-survey/"><img src="assets/survey-banner.svg" width="1200" alt="Revisiting Video Foundation Models through the Lens of World Modeling. Reading, Writing, Sharing, and Interacting with the World through Video."></a>
+  <h1>Revisiting Video Foundation Models<br>through the Lens of World Modeling</h1>
+
+  <p><img src="assets/icons/reading.svg" width="20" alt=""> <strong>Reading</strong> &nbsp; <img src="assets/icons/writing.svg" width="20" alt=""> <strong>Writing</strong> &nbsp; <img src="assets/icons/sharing.svg" width="20" alt=""> <strong>Sharing</strong> &nbsp; <img src="assets/icons/interacting.svg" width="20" alt=""> <strong>Interacting</strong><br>with the World through Video</p>
 
   <p><strong>A survey and open reference collection</strong></p>
 
@@ -24,7 +26,7 @@ This repository brings together the survey's core framework and **652 references
 
 ## Contents
 
-[The survey at a glance](#the-survey-at-a-glance) · [World-model taxonomy](#world-model-taxonomy) · [Evidence and open questions](#evidence-and-open-questions) · [Literature](#literature) · [Publication](#publication) · [Contributing](#contributing)
+[The survey at a glance](#the-survey-at-a-glance) · [Research timeline](#research-timeline) · [World-model taxonomy](#world-model-taxonomy) · [Evidence and open questions](#evidence-and-open-questions) · [Literature](#literature) · [Publication](#publication) · [Contributing](#contributing)
 
 ## The survey at a glance
 
@@ -32,16 +34,29 @@ An **observed video** is a partial, lossy, temporally ordered trace of a **laten
 
 | Operation | Core question | The survey covers | References |
 | :--- | :--- | :--- | ---: |
-| 🟡 **[Reading](#reading)** · video comprehension | What world properties can be inferred from the trace? | Tasks and benchmarks; representation learning; Video-LLMs; video agents; applications | 151 |
-| 🔵 **[Writing](#writing)** · video generation | What trace follows from a partial world specification? | Tasks and conditions; latent representations; generative models; control; applications | 122 |
-| 🟢 **[Sharing](#sharing)** · unified video models | How can comprehension and generation support one another? | Unified architectures; learning paradigms; editing and reasoning; cross-direction evaluation | 60 |
-| 🟣 **[Interacting](#interacting)** · video world models | How does state evolve under actions and new observations? | Architectures and training; control and memory; responsiveness and grounding; applications and evaluation | 114 |
+| <img src="assets/icons/reading.svg" width="18" alt=""> **[Reading](#reading)** · video comprehension | What world properties can be inferred from the trace? | Tasks and benchmarks; representation learning; Video-LLMs; video agents; applications | 151 |
+| <img src="assets/icons/writing.svg" width="18" alt=""> **[Writing](#writing)** · video generation | What trace follows from a partial world specification? | Tasks and conditions; latent representations; generative models; control; applications | 122 |
+| <img src="assets/icons/sharing.svg" width="18" alt=""> **[Sharing](#sharing)** · unified video models | How can comprehension and generation support one another? | Unified architectures; learning paradigms; editing and reasoning; cross-direction evaluation | 60 |
+| <img src="assets/icons/interacting.svg" width="18" alt=""> **[Interacting](#interacting)** · video world models | How does state evolve under actions and new observations? | Architectures and training; control and memory; responsiveness and grounding; applications and evaluation | 114 |
 
 **Supporting collections:** [Datasets, Benchmarks and Evaluation](#evaluation) (184) · [Surveys and Foundations](#foundations) (21).
 
 <p align="center"><a href="https://vid-gen.github.io/video-world-model-survey/#lens"><img src="assets/survey-overview.png" width="1100" alt="The four operations illustrated through a car passing behind a wall: reading infers its state, writing renders video, sharing couples both directions, and interacting changes evolution through controls."></a></p>
 
 > **Temporal coherence and world consistency are different.** Smooth neighboring frames do not establish persistent identity, layout, physics, or causal responses. A hard cut can break visual smoothness while preserving the world. Neither property implies the other.
+
+## Research timeline
+
+The paper's original timeline traces selected milestones in the four research directions from 2017 to 2026. [View the timeline on the project website →](https://vid-gen.github.io/video-world-model-survey/#timeline)
+
+<details>
+<summary><strong>Expand the original research timeline</strong></summary>
+
+<p align="center"><a href="assets/timeline.webp"><img src="assets/timeline.webp" width="1000" alt="The original paper timeline: parallel milestones in Reading, Writing, Sharing, and Interacting from 2017 to 2026."></a></p>
+
+</details>
+
+The website also presents the paper's original representation-learning, generation, unification, world-model taxonomy, and challenge figures. [Explore the visual survey →](https://vid-gen.github.io/video-world-model-survey/#reading)
 
 ## World-model taxonomy
 
