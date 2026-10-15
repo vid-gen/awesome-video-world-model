@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>Revisiting Video Foundation Models<br>through the Lens of World Modeling</h1>
+  <h1>Reading, Writing, Sharing, and Interacting<br>with the World through Video</h1>
 
-  <p><img src="assets/icons/reading.svg" width="20" alt=""> <strong>Reading</strong> &nbsp; <img src="assets/icons/writing.svg" width="20" alt=""> <strong>Writing</strong> &nbsp; <img src="assets/icons/sharing.svg" width="20" alt=""> <strong>Sharing</strong> &nbsp; <img src="assets/icons/interacting.svg" width="20" alt=""> <strong>Interacting</strong><br>with the World through Video</p>
+  <p><strong>A Survey Toward Unified Video World Models</strong></p>
 
   <p>
     <a href="https://vid-gen.github.io/video-world-model-survey/"><img src="assets/readme/link-project.svg" height="32" alt="Project website"></a>
@@ -18,7 +18,7 @@
 
 A curated collection of **652 references** on video comprehension, generation, unified modeling, and video world models, organized through four operations: **reading, writing, sharing, and interacting**. Papers are grouped by research area and listed newest first.
 
-**Updated:** October 15, 2026.
+**Updated:** October 16, 2026.
 
 ## Contents
 
@@ -47,7 +47,7 @@ An **observed video** is a partial, lossy, temporally ordered trace of a **laten
 | <img src="assets/icons/sharing.svg" width="18" alt=""> **[Sharing](#sharing)** · unified video models | How can comprehension and generation support one another? | Unified architectures; learning paradigms; editing and reasoning; cross-direction evaluation | 60 |
 | <img src="assets/icons/interacting.svg" width="18" alt=""> **[Interacting](#interacting)** · video world models | How does state evolve under actions and new observations? | Architectures and training; control and memory; responsiveness and grounding; applications and evaluation | 114 |
 
-<p align="center"><a href="https://vid-gen.github.io/video-world-model-survey/#lens"><img src="assets/survey-overview.png" width="1100" alt="The four operations illustrated through a car passing behind a wall: reading infers its state, writing renders video, sharing couples both directions, and interacting changes evolution through controls."></a></p>
+<p align="center"><a href="https://vid-gen.github.io/video-world-model-survey/#lens"><img src="assets/survey-overview.png?v=v34b" width="1100" alt="Toward unified video world models: reading infers world state from video, writing generates video from conditions, sharing couples reading and writing, and interacting evolves state under actions with repeated video feedback."></a></p>
 
 > **Temporal coherence and world consistency are different.** Smooth neighboring frames do not establish persistent identity, layout, physics, or causal responses. A hard cut can break visual smoothness while preserving the world. Neither property implies the other.
 

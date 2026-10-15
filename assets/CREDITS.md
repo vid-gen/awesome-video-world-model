@@ -1,7 +1,7 @@
 # Artwork
 
 `survey-overview.png` and `timeline.webp` are web renderings of the survey authors'
-original manuscript figures (`F01_teaser_B_video_bridge_v2.pdf` and
+original manuscript figures (`F01_teaser_v34b.pdf` and
 `F02_field_timeline-5.pdf`). They are included with the authors' authorization.
 The timeline is lossless and retains the original labels, colors, and layout.
 
