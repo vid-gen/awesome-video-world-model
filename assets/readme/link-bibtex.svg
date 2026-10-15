@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="32" viewBox="0 0 160 32" role="img" aria-labelledby="title">
+  <title id="title">Download BibTeX</title>
+  <rect x=".5" y=".5" width="159" height="31" rx="5" fill="#82F5B1"/>
+  <g fill="none" stroke="#172C40" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9v12m-4-4 4 4 4-4M11 21v3h14v-3"/></g>
+  <text x="34" y="20.5" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#172C40">Download BibTeX</text>
+</svg>

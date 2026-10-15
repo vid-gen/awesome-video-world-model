@@ -16,6 +16,8 @@ No complete font is distributed here.
 for direct category navigation. Evaluation and foundations use simple geometric
 symbols. The compact publication badges in `readme/venues/` are local SVGs, so
 the literature list does not depend on an external badge-rendering service.
+The compact `readme/link-*.svg` resource buttons use the four manuscript colors
+and simple geometric icons. They are also served locally, without external badges.
 The title / resource-link / venue-badge presentation and category navigation
 follow the reference repositories
 [Awesome AI for Games](https://github.com/Eurekaleo/awesome-ai-for-games) and

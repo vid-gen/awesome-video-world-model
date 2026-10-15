@@ -3,12 +3,12 @@
 
   <p><img src="assets/icons/reading.svg" width="20" alt=""> <strong>Reading</strong> &nbsp; <img src="assets/icons/writing.svg" width="20" alt=""> <strong>Writing</strong> &nbsp; <img src="assets/icons/sharing.svg" width="20" alt=""> <strong>Sharing</strong> &nbsp; <img src="assets/icons/interacting.svg" width="20" alt=""> <strong>Interacting</strong><br>with the World through Video</p>
 
-  <p><strong>A survey and open reference collection</strong></p>
-
-  <a href="https://vid-gen.github.io/video-world-model-survey/"><img src="https://img.shields.io/badge/Explore-project_website-142a36?style=flat-square" alt="Project website"></a>
-  <a href="https://vid-gen.github.io/video-world-model-survey/#library"><img src="https://img.shields.io/badge/References-652-527465?style=flat-square" alt="652 references"></a>
-  <a href="#publication"><img src="https://img.shields.io/badge/Paper-forthcoming-65716e?style=flat-square" alt="Paper forthcoming"></a>
-  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributions-welcome-527465?style=flat-square" alt="Contributions welcome"></a>
+  <p>
+    <a href="https://vid-gen.github.io/video-world-model-survey/"><img src="assets/readme/link-project.svg" height="32" alt="Project website"></a>
+    <a href="#literature"><img src="assets/readme/link-literature.svg" height="32" alt="652 references"></a>
+    <a href="references.bib"><img src="assets/readme/link-bibtex.svg" height="32" alt="Download BibTeX"></a>
+    <a href="CONTRIBUTING.md"><img src="assets/readme/link-contribute.svg" height="32" alt="Contribute"></a>
+  </p>
 
   <p>Shengqiong Wu<sup>1,*</sup> · Meng Luo<sup>2,*</sup> · Bobo Li<sup>1</sup> · Ziwei Liu<sup>3</sup><br>Shuicheng Yan<sup>2</sup> · Ming-Hsuan Yang<sup>4</sup> · Philip Torr<sup>1</sup> · Hao Fei<sup>1,†</sup></p>
   <p><sub><sup>1</sup> University of Oxford &nbsp;·&nbsp; <sup>2</sup> National University of Singapore<br><sup>3</sup> Nanyang Technological University &nbsp;·&nbsp; <sup>4</sup> University of California, Merced<br>* Equal contribution &nbsp;·&nbsp; † Project lead & correspondence</sub></p>
@@ -16,21 +16,15 @@
 
 ## Awesome Video World Models
 
-**[Project website](https://vid-gen.github.io/video-world-model-survey/) · [Search the literature](https://vid-gen.github.io/video-world-model-survey/#library) · [Download BibTeX](references.bib) · [Suggest a paper](https://github.com/vid-gen/awesome-video-world-model/issues/new?template=new-paper.yml)**
+A curated collection of **652 references** on video comprehension, generation, unified modeling, and video world models, organized through four operations: **reading, writing, sharing, and interacting**. Papers are grouped by research area and listed newest first.
 
-Video records only part of a changing world. Our survey, **Revisiting Video Foundation Models through the Lens of World Modeling**, connects video comprehension, generation, unified modeling, and video world models through four operations: **reading, writing, sharing, and interacting**.
-
-This repository brings together the survey's core framework and **652 references**. The complete literature list is directly readable below; the website adds a guided overview, filtering, and BibTeX export. Each work appears once in its primary research area, newest first within each area.
-
-**Updated:** October 14, 2026.
+**Updated:** October 15, 2026.
 
 ## Contents
 
-[Browse the literature](#browse-the-literature) · [The survey at a glance](#the-survey-at-a-glance) · [Research timeline](#research-timeline) · [World-model taxonomy](#world-model-taxonomy) · [Evidence and open questions](#evidence-and-open-questions) · [Literature](#literature) · [Publication](#publication) · [Contributing](#contributing)
+[Browse the literature](#browse-the-literature) · [The survey at a glance](#the-survey-at-a-glance) · [Research timeline](#research-timeline) · [World-model taxonomy](#world-model-taxonomy) · [BibTeX](#bibtex) · [Contributing](#contributing)
 
 ## Browse the literature
-
-Select a research area to jump straight to its papers. All entries are readable here on GitHub.
 
 <p align="center">
   <a href="#reading"><img src="assets/readme/nav-reading.svg" width="246" alt="Reading: video comprehension, 151 references"></a>
@@ -53,24 +47,13 @@ An **observed video** is a partial, lossy, temporally ordered trace of a **laten
 | <img src="assets/icons/sharing.svg" width="18" alt=""> **[Sharing](#sharing)** · unified video models | How can comprehension and generation support one another? | Unified architectures; learning paradigms; editing and reasoning; cross-direction evaluation | 60 |
 | <img src="assets/icons/interacting.svg" width="18" alt=""> **[Interacting](#interacting)** · video world models | How does state evolve under actions and new observations? | Architectures and training; control and memory; responsiveness and grounding; applications and evaluation | 114 |
 
-**Supporting collections:** [Datasets, Benchmarks and Evaluation](#evaluation) (184) · [Surveys and Foundations](#foundations) (21).
-
 <p align="center"><a href="https://vid-gen.github.io/video-world-model-survey/#lens"><img src="assets/survey-overview.png" width="1100" alt="The four operations illustrated through a car passing behind a wall: reading infers its state, writing renders video, sharing couples both directions, and interacting changes evolution through controls."></a></p>
 
 > **Temporal coherence and world consistency are different.** Smooth neighboring frames do not establish persistent identity, layout, physics, or causal responses. A hard cut can break visual smoothness while preserving the world. Neither property implies the other.
 
 ## Research timeline
 
-The paper's original timeline traces selected milestones in the four research directions from 2017 to 2026. [View the timeline on the project website →](https://vid-gen.github.io/video-world-model-survey/#timeline)
-
-<details>
-<summary><strong>Expand the original research timeline</strong></summary>
-
 <p align="center"><a href="assets/timeline.webp"><img src="assets/timeline.webp" width="1000" alt="The original paper timeline: parallel milestones in Reading, Writing, Sharing, and Interacting from 2017 to 2026."></a></p>
-
-</details>
-
-The website also presents the paper's original representation-learning, generation, unification, world-model taxonomy, and challenge figures. [Explore the visual survey →](https://vid-gen.github.io/video-world-model-survey/#reading)
 
 ## World-model taxonomy
 
@@ -81,33 +64,13 @@ The survey crosses **prediction space** with **transition interface**. The same 
 | **Observation space** — frames, video tokens, or video-decoding latents | Forecast video from observed history | Predict controlled video from a supplied action sequence | Advance a visual world after each new control |
 | **Latent state** — video-derived features without required rendering | Predict target features from context | Roll out candidate feature trajectories | Plan, act, observe, and replan |
 
-Predicting generative latents that are decoded into video still counts as observation-space prediction. “Interactive” describes the control interface, not the attention pattern. [Explore the taxonomy →](https://vid-gen.github.io/video-world-model-survey/#world-models)
-
-## Evidence and open questions
-
-Stronger claims require stronger evidence: **plausible output → faithfulness to evidence or conditions → consistent state and controlled cross-direction transfer → decision utility**. For unified models, capability coverage, shared machinery, and functional synergy are distinct claims.
-
-The survey identifies seven connected research problems:
-
-1. **Long-horizon world consistency:** maintain evolving hidden state, not only stored observations.
-2. **Physical and causal grounding:** respond correctly to interventions while preserving unrelated state.
-3. **Measurable synergy:** isolate the contribution of sharing under matched resources.
-4. **Standardized evaluation:** compare world properties under explicit, compatible protocols.
-5. **Control from unlabeled video:** connect observed motion to usable action semantics.
-6. **Scene and embodiment generalization:** test what survives changes in environment, camera, and body.
-7. **Stochastic worlds and rare events:** measure calibrated outcomes, not only sample diversity.
-
-[Read the overview and proposed tests →](https://vid-gen.github.io/video-world-model-survey/#questions)
+Predicting generative latents that are decoded into video still counts as observation-space prediction. “Interactive” describes the control interface, not the attention pattern.
 
 ## Literature
 
-Entries follow **title · [paper] · [code] · [project] · venue**; additional **[data]** links point to released datasets. Resource links are checked against the paper and author- or institution-maintained sources. Version-specific directories, branches, or snapshots are used for shared repositories; an unreleased implementation is not labeled as code. Reports and books use **[source]** and **[book]** where appropriate. Full author lists and citations are available in [BibTeX](references.bib).
+**[paper] · [code] · [project] · [data]** — resource links point to verified official releases for the cited version. Full citations are available in [BibTeX](references.bib).
 
 <p><img src="assets/readme/legend-conference.svg" alt="Conference" height="18"> <img src="assets/readme/legend-journal.svg" alt="Journal" height="18"> <img src="assets/readme/legend-preprint.svg" alt="Preprint" height="18"> <img src="assets/readme/legend-report.svg" alt="Report / official" height="18"> <img src="assets/readme/legend-book.svg" alt="Book" height="18"></p>
-
-Jump directly to **[Reading](#reading)** · **[Writing](#writing)** · **[Sharing](#sharing)** · **[Interacting](#interacting)** · **[Evaluation](#evaluation)** · **[Foundations](#foundations)**.
-
-Years and venues follow the cited bibliographic records; some records use a preprint year. Categories reflect a work's primary placement and do not imply that its capabilities are restricted to that operation.
 
 <a id="reading"></a>
 <a id="video-understanding-and-reasoning"></a>
@@ -316,7 +279,7 @@ Video comprehension, representation learning, Video-LLMs, long-video reasoning, 
 - Quo vadis, action recognition? a new model and the kinetics dataset. [[paper](<https://doi.org/10.1109/cvpr.2017.502>)] <img src="assets/readme/venues/cvpr.svg" alt="CVPR" title="IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2017" height="18">
 - TALL: Temporal Activity Localization via Language Query. [[paper](<https://doi.org/10.1109/iccv.2017.563>)] <img src="assets/readme/venues/iccv.svg" alt="ICCV" title="IEEE/CVF International Conference on Computer Vision, 2017" height="18">
 
-[↑ Browse all areas](#browse-the-literature) · [Publication key](#literature) · [Contents](#contents)
+[↑ Browse all areas](#browse-the-literature)
 
 <a id="writing"></a>
 <a id="video-generation-and-editing"></a>
@@ -501,7 +464,7 @@ Video generation and editing, latent representations, diffusion, flow and autore
 
 - Improved Techniques for Training GANs. [[paper](<https://arxiv.org/abs/1606.03498>)] [[code](<https://github.com/openai/improved-gan>)] <img src="assets/readme/venues/arxiv.svg" alt="arXiv" title="arXiv preprint, 2016" height="18">
 
-[↑ Browse all areas](#browse-the-literature) · [Publication key](#literature) · [Contents](#contents)
+[↑ Browse all areas](#browse-the-literature)
 
 <a id="sharing"></a>
 <a id="unified-multimodal-models"></a>
@@ -599,7 +562,7 @@ Unified understanding and generation through shared tokens, continuous represent
 
 - UniVL: A Unified Video and Language Pre-Training Model for Multimodal Understanding and Generation. [[paper](<https://arxiv.org/abs/2002.06353>)] [[code](<https://github.com/microsoft/UniVL>)] <img src="assets/readme/venues/arxiv.svg" alt="arXiv" title="arXiv preprint, 2020" height="18">
 
-[↑ Browse all areas](#browse-the-literature) · [Publication key](#literature) · [Contents](#contents)
+[↑ Browse all areas](#browse-the-literature)
 
 <a id="interacting"></a>
 <a id="world-models-and-simulation"></a>
@@ -751,7 +714,7 @@ Video world models, action-conditioned prediction, interactive simulation, persi
 - Recurrent World Models Facilitate Policy Evolution. [[paper](<https://arxiv.org/abs/1809.01999>)] [[project](<https://worldmodels.github.io>)] <img src="assets/readme/venues/neurips.svg" alt="NeurIPS" title="Conference on Neural Information Processing Systems, 2018" height="18">
 - Stochastic Variational Video Prediction. [[paper](<https://arxiv.org/abs/1710.11252>)] [[project](<https://sites.google.com/site/stochasticvideoprediction/>)] <img src="assets/readme/venues/iclr.svg" alt="ICLR" title="International Conference on Learning Representations, 2018" height="18">
 
-[↑ Browse all areas](#browse-the-literature) · [Publication key](#literature) · [Contents](#contents)
+[↑ Browse all areas](#browse-the-literature)
 
 <a id="evaluation"></a>
 <a id="datasets-benchmarks-and-evaluation"></a>
@@ -1021,7 +984,7 @@ Training data, understanding and generation benchmarks, evaluation of world prop
 
 - Image Quality Assessment: From Error Visibility to Structural Similarity. [[paper](<https://doi.org/10.1109/TIP.2003.819861>)] [[code](<https://ece.uwaterloo.ca/~z70wang/research/ssim/ssim_index.m>)] [[project](<https://ece.uwaterloo.ca/~z70wang/research/ssim/>)] <img src="assets/readme/venues/ieee-transactions-on-image-processing.svg" alt="TIP" title="IEEE Transactions on Image Processing, 2004" height="18">
 
-[↑ Browse all areas](#browse-the-literature) · [Publication key](#literature) · [Contents](#contents)
+[↑ Browse all areas](#browse-the-literature)
 
 <a id="foundations"></a>
 <a id="surveys-and-foundations"></a>
@@ -1108,11 +1071,7 @@ Related surveys, conceptual foundations, and general modeling methods that suppo
 
 - Vision: A Computational Investigation into the Human Representation and Processing of Visual Information. [[book](<https://mitpress.mit.edu/9780262514620/vision/>)] <img src="assets/readme/venues/book.svg" alt="Book" title="Book, 1982" height="18">
 
-[↑ Browse all areas](#browse-the-literature) · [Publication key](#literature) · [Contents](#contents)
-
-## Publication
-
-The survey manuscript is forthcoming. The framework and reference collection are available now; the paper link and final citation will be added when released.
+[↑ Browse all areas](#browse-the-literature)
 
 ## BibTeX
 
