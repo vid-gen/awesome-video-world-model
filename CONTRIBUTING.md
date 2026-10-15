@@ -34,10 +34,11 @@ Choose a work's main contribution when it spans multiple areas.
 ## Submit a pull request
 
 Add a bullet directly to `README.md` under the appropriate category and year.
-Use a plain-text title, separate resource links, and an 18-pixel venue badge:
+Start with a bold inline-code venue/year label, followed by the plain-text title
+and separate resource links:
 
 ```markdown
-- Paper title. [[paper](<https://paper-url>)] [[code](<https://official-code-url>)] [[project](<https://official-project-url>)] <img src="assets/readme/venues/cvpr.svg" alt="CVPR" title="IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026" height="18">
+- **`CVPR 2026`** Paper title. [[paper](https://paper-url)] [[code](https://official-code-url)] [[project](https://official-project-url)]
 ```
 
 Replace the example URLs and venue/year with the work's actual metadata. Omit
@@ -52,11 +53,11 @@ lists belong in the bibliographic data and BibTeX, rather than in the compact
 README bullets. Update category/total counts, navigation-card counts, and year
 anchors when adding or removing entries.
 
-Reuse a matching SVG from `assets/readme/venues/`. Badge colors distinguish
-conferences, journals, preprints, reports/official sources, and books; they do not
-indicate quality or acceptance status. Use the verified publication venue, not
-the site hosting a PDF. Do not replace a preprint label with a conference label
-without publisher or author confirmation.
+Use the verified publication venue and year in the leading label, not the site
+hosting a PDF. Do not replace an `arXiv` label with a conference label without
+publisher or author confirmation. Keep venue names concise (for example, `CVPR`,
+`ICLR`, or `TPAMI`); use `Report` or `Book` for those source types. Do not add
+image badges to literature entries.
 
 For source links, prefer a publisher landing page, DOI, ACL Anthology, OpenReview,
 arXiv abstract page, or official project page. Use authoritative metadata for any

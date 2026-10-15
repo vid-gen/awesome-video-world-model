@@ -14,15 +14,19 @@ No complete font is distributed here.
 
 `readme/nav-*.svg` reuse these four manuscript symbols and the paper's palette
 for direct category navigation. Evaluation and foundations use simple geometric
-symbols. The compact publication badges in `readme/venues/` are local SVGs, so
-the literature list does not depend on an external badge-rendering service.
+symbols.
 The compact `readme/link-*.svg` resource buttons use the four manuscript colors
 and simple geometric icons. They are also served locally, without external badges.
-The title / resource-link / venue-badge presentation and category navigation
-follow the reference repositories
+The category navigation follows the reference repositories
 [Awesome AI for Games](https://github.com/Eurekaleo/awesome-ai-for-games) and
 [Awesome Physical2RSI](https://github.com/Eurekaleo/Awesome-Physical2RSI), adapted
 to this survey's categories and artwork.
+
+The literature entries follow the leading venue/year label, plain-text title,
+and resource-link format of
+[Awesome Reliable Self-Evolving Agents](https://github.com/wkqdzkd/Awesome-Reliable-Self-Evolving-Agents).
+Publication badges in `readme/venues/` and their legends are retained as unused
+assets; they are no longer displayed in the paper list.
 
 The [companion website](https://vid-gen.github.io/video-world-model-survey/)
 includes the full visual guide and additional original figures. Third-party
