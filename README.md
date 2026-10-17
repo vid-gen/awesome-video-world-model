@@ -18,7 +18,7 @@
 
 A curated collection of **652 references** on video comprehension, generation, unified modeling, and video world models, organized through four operations: **reading, writing, sharing, and interacting**. Papers are grouped by research area and listed newest first.
 
-**Updated:** October 16, 2026.
+**Updated:** October 17, 2026.
 
 ## Contents
 
@@ -47,7 +47,7 @@ An **observed video** is a partial, lossy, temporally ordered trace of a **laten
 | <img src="assets/icons/sharing.svg" width="18" alt=""> **[Sharing](#sharing)** · unified video models | How can comprehension and generation support one another? | Unified architectures; learning paradigms; editing and reasoning; cross-direction evaluation | 60 |
 | <img src="assets/icons/interacting.svg" width="18" alt=""> **[Interacting](#interacting)** · video world models | How does state evolve under actions and new observations? | Architectures and training; control and memory; responsiveness and grounding; applications and evaluation | 114 |
 
-<p align="center"><a href="https://vid-gen.github.io/video-world-model-survey/#lens"><img src="assets/survey-overview.png?v=v34b" width="1100" alt="Toward unified video world models: reading infers world state from video, writing generates video from conditions, sharing couples reading and writing, and interacting evolves state under actions with repeated video feedback."></a></p>
+<p align="center"><a href="https://vid-gen.github.io/video-world-model-survey/#lens"><img src="assets/survey-overview.png?v=cover-v8" width="1100" alt="Four operations between video and world state: reading, writing, sharing, and interacting."></a></p>
 
 > **Temporal coherence and world consistency are different.** Smooth neighboring frames do not establish persistent identity, layout, physics, or causal responses. A hard cut can break visual smoothness while preserving the world. Neither property implies the other.
 
