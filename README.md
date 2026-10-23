@@ -4,6 +4,7 @@
   <p><strong>A Survey Toward Unified Video World Models</strong></p>
 
   <p>
+    <a href="https://arxiv.org/abs/2610.31668"><img src="assets/readme/link-paper.svg" height="32" alt="Paper on arXiv"></a>
     <a href="https://vid-gen.github.io/video-world-model-survey/"><img src="assets/readme/link-project.svg" height="32" alt="Project website"></a>
     <a href="#literature"><img src="assets/readme/link-literature.svg" height="32" alt="669 references"></a>
     <a href="references.bib"><img src="assets/readme/link-bibtex.svg" height="32" alt="Download BibTeX"></a>

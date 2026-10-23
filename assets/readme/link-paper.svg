@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="32" viewBox="0 0 104 32" role="img" aria-labelledby="title">
+  <title id="title">Paper on arXiv</title>
+  <rect x=".5" y=".5" width="103" height="31" rx="5" fill="#172C40"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8h8l5 5v11H12zM20 8v5h5M15 17h7M15 20h7"/></g>
+  <text x="34" y="20.5" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Paper ↗</text>
+</svg>
