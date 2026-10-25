@@ -6,7 +6,7 @@
   <p>
     <a href="https://arxiv.org/abs/2610.31668"><img src="assets/readme/link-paper.svg" height="32" alt="Paper on arXiv"></a>
     <a href="https://vid-gen.github.io/video-world-model-survey/"><img src="assets/readme/link-project.svg" height="32" alt="Project website"></a>
-    <a href="#literature"><img src="assets/readme/link-literature.svg" height="32" alt="669 references"></a>
+    <a href="#literature"><img src="assets/readme/link-literature.svg?v=20261025-clean" height="32" alt="Literature"></a>
     <a href="references.bib"><img src="assets/readme/link-bibtex.svg" height="32" alt="Download BibTeX"></a>
     <a href="CONTRIBUTING.md"><img src="assets/readme/link-contribute.svg" height="32" alt="Contribute"></a>
   </p>
@@ -17,9 +17,7 @@
 
 ## Awesome Video World Models
 
-A curated collection of **669 references** on video comprehension, generation, unified modeling, and video world models, organized through four operations: **reading, writing, sharing, and interacting**. Papers are grouped by research area and listed newest first.
-
-**Updated:** October 23, 2026.
+Literature on video comprehension, generation, unified video models, and video world models.
 
 ## Contents
 
@@ -28,25 +26,25 @@ A curated collection of **669 references** on video comprehension, generation, u
 ## Browse the literature
 
 <p align="center">
-  <a href="#reading"><img src="assets/readme/nav-reading.svg" width="246" alt="Reading: video comprehension, 152 references"></a>
-  <a href="#writing"><img src="assets/readme/nav-writing.svg" width="246" alt="Writing: video generation, 128 references"></a>
-  <a href="#sharing"><img src="assets/readme/nav-sharing.svg" width="246" alt="Sharing: unified video models, 60 references"></a>
+  <a href="#reading"><img src="assets/readme/nav-reading.svg?v=20261025-clean" width="246" alt="Reading: video comprehension"></a>
+  <a href="#writing"><img src="assets/readme/nav-writing.svg?v=20261025-clean" width="246" alt="Writing: video generation"></a>
+  <a href="#sharing"><img src="assets/readme/nav-sharing.svg?v=20261025-clean" width="246" alt="Sharing: unified video models"></a>
   <br>
-  <a href="#interacting"><img src="assets/readme/nav-interacting.svg" width="246" alt="Interacting: video world models, 119 references"></a>
-  <a href="#evaluation"><img src="assets/readme/nav-evaluation.svg" width="246" alt="Evaluation: datasets and benchmarks, 187 references"></a>
-  <a href="#foundations"><img src="assets/readme/nav-foundations.svg" width="246" alt="Foundations: surveys and background, 23 references"></a>
+  <a href="#interacting"><img src="assets/readme/nav-interacting.svg?v=20261025-clean" width="246" alt="Interacting: video world models"></a>
+  <a href="#evaluation"><img src="assets/readme/nav-evaluation.svg?v=20261025-clean" width="246" alt="Evaluation: datasets and benchmarks"></a>
+  <a href="#foundations"><img src="assets/readme/nav-foundations.svg?v=20261025-clean" width="246" alt="Foundations: surveys and background"></a>
 </p>
 
 ## The survey at a glance
 
 An **observed video** is a partial, lossy, temporally ordered trace of a **latent temporal world**. A model maintains its own **represented state**, which can be incomplete or wrong. The four operations describe different ways of connecting these objects; one system can perform several operations.
 
-| Operation | Core question | The survey covers | References |
-| :--- | :--- | :--- | ---: |
-| <img src="assets/icons/reading.svg" width="18" alt=""> **[Reading](#reading)** · video comprehension | What world properties can be inferred from the trace? | Tasks and benchmarks; representation learning; Video-LLMs; video agents; applications | 152 |
-| <img src="assets/icons/writing.svg" width="18" alt=""> **[Writing](#writing)** · video generation | What trace follows from a partial world specification? | Tasks and conditions; latent representations; generative models; control; applications | 128 |
-| <img src="assets/icons/sharing.svg" width="18" alt=""> **[Sharing](#sharing)** · unified video models | How can comprehension and generation support one another? | Unified architectures; learning paradigms; editing and reasoning; cross-direction evaluation | 60 |
-| <img src="assets/icons/interacting.svg" width="18" alt=""> **[Interacting](#interacting)** · video world models | How does state evolve under actions and new observations? | Architectures and training; control and memory; responsiveness and grounding; applications and evaluation | 119 |
+| Operation | Core question | The survey covers |
+| :--- | :--- | :--- |
+| <img src="assets/icons/reading.svg" width="18" alt=""> **[Reading](#reading)** · video comprehension | What world properties can be inferred from the trace? | Tasks and benchmarks; representation learning; Video-LLMs; video agents; applications |
+| <img src="assets/icons/writing.svg" width="18" alt=""> **[Writing](#writing)** · video generation | What trace follows from a partial world specification? | Tasks and conditions; latent representations; generative models; control; applications |
+| <img src="assets/icons/sharing.svg" width="18" alt=""> **[Sharing](#sharing)** · unified video models | How can comprehension and generation support one another? | Unified architectures; learning paradigms; editing and reasoning; cross-direction evaluation |
+| <img src="assets/icons/interacting.svg" width="18" alt=""> **[Interacting](#interacting)** · video world models | How does state evolve under actions and new observations? | Architectures and training; control and memory; responsiveness and grounding; applications and evaluation |
 
 <p align="center"><a href="https://vid-gen.github.io/video-world-model-survey/#lens"><img src="assets/survey-overview.png?v=cover-v9" width="1100" alt="Four operations between video and world state: reading, writing, sharing, and interacting."></a></p>
 
@@ -69,7 +67,7 @@ Predicting generative latents that are decoded into video still counts as observ
 
 ## Literature
 
-**[paper] · [code] · [project] · [data]** — resource links point to verified official releases for the cited version. Full citations are available in [BibTeX](references.bib).
+Full citations are available in [BibTeX](references.bib).
 
 <a id="reading"></a>
 <a id="video-understanding-and-reasoning"></a>
@@ -78,7 +76,7 @@ Predicting generative latents that are decoded into video still counts as observ
 
 ## Reading the World
 
-Video comprehension, representation learning, Video-LLMs, long-video reasoning, streaming perception, and video agents. **152 references.**
+Video comprehension, representation learning, Video-LLMs, long-video reasoning, streaming perception, and video agents.
 
 **Years:** [2026](#reading-2026) · [2025](#reading-2025) · [2024](#reading-2024) · [2023](#reading-2023) · [2022](#reading-2022) · [2021](#reading-2021) · [2019](#reading-2019) · [2017](#reading-2017).
 
@@ -283,7 +281,7 @@ Video comprehension, representation learning, Video-LLMs, long-video reasoning, 
 
 ## Writing the World
 
-Video generation and editing, latent representations, diffusion, flow and autoregressive models, control strategies, and audio-video synthesis. **128 references.**
+Video generation and editing, latent representations, diffusion, flow and autoregressive models, control strategies, and audio-video synthesis.
 
 **Years:** [2026](#writing-2026) · [2025](#writing-2025) · [2024](#writing-2024) · [2023](#writing-2023) · [2022](#writing-2022) · [2021](#writing-2021) · [2020](#writing-2020) · [2018](#writing-2018) · [2017](#writing-2017) · [2016](#writing-2016).
 
@@ -474,7 +472,7 @@ Video generation and editing, latent representations, diffusion, flow and autore
 
 ## Sharing the World
 
-Unified understanding and generation through shared tokens, continuous representations, modular interfaces, joint learning, and generative reasoning. **60 references.**
+Unified understanding and generation through shared tokens, continuous representations, modular interfaces, joint learning, and generative reasoning.
 
 **Years:** [2026](#sharing-2026) · [2025](#sharing-2025) · [2024](#sharing-2024) · [2023](#sharing-2023) · [2020](#sharing-2020).
 
@@ -572,7 +570,7 @@ Unified understanding and generation through shared tokens, continuous represent
 
 ## Interacting with the World
 
-Video world models, action-conditioned prediction, interactive simulation, persistent memory, physical grounding, planning, robotics, and driving. **119 references.**
+Video world models, action-conditioned prediction, interactive simulation, persistent memory, physical grounding, planning, robotics, and driving.
 
 **Years:** [2027](#interacting-2027) · [2026](#interacting-2026) · [2025](#interacting-2025) · [2024](#interacting-2024) · [2023](#interacting-2023) · [2018](#interacting-2018).
 
@@ -732,7 +730,7 @@ Video world models, action-conditioned prediction, interactive simulation, persi
 
 ## Datasets, Benchmarks and Evaluation
 
-Training data, understanding and generation benchmarks, evaluation of world properties, perceptual metrics, and decision-oriented protocols. **187 references.**
+Training data, understanding and generation benchmarks, evaluation of world properties, perceptual metrics, and decision-oriented protocols.
 
 **Years:** [2026](#evaluation-2026) · [2025](#evaluation-2025) · [2024](#evaluation-2024) · [2023](#evaluation-2023) · [2022](#evaluation-2022) · [2021](#evaluation-2021) · [2020](#evaluation-2020) · [2019](#evaluation-2019) · [2018](#evaluation-2018) · [2017](#evaluation-2017) · [2016](#evaluation-2016) · [2015](#evaluation-2015) · [2012](#evaluation-2012) · [2011](#evaluation-2011) · [2004](#evaluation-2004).
 
@@ -1005,7 +1003,7 @@ Training data, understanding and generation benchmarks, evaluation of world prop
 
 ## Surveys and Foundations
 
-Related surveys, conceptual foundations, and general modeling methods that support video and world-model research. **23 references.**
+Related surveys, conceptual foundations, and general modeling methods that support video and world-model research.
 
 **Years:** [2026](#foundations-2026) · [2025](#foundations-2025) · [2024](#foundations-2024) · [2023](#foundations-2023) · [2022](#foundations-2022) · [2021](#foundations-2021) · [2020](#foundations-2020) · [2017](#foundations-2017) · [2015](#foundations-2015) · [2014](#foundations-2014) · [1982](#foundations-1982).
 
@@ -1091,7 +1089,7 @@ Related surveys, conceptual foundations, and general modeling methods that suppo
 
 ## BibTeX
 
-[Download `references.bib`](references.bib) for all 669 listed works. The [website](https://vid-gen.github.io/video-world-model-survey/#library) also supports single-reference copying and filtered BibTeX downloads. Public bibliographic metadata is available in [JSON](data/references.json).
+[Download `references.bib`](references.bib) for the listed papers. The [website](https://vid-gen.github.io/video-world-model-survey/#library) also supports single-reference copying and filtered BibTeX downloads. Public bibliographic metadata is available in [JSON](data/references.json).
 
 ## Contributing
 
