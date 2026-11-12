@@ -4261,6 +4261,24 @@
       "bibtex": "@misc{khorrambakht2026flexwam,\n  title         = {{FLEX-WAM}: Flexible Block-Causal World-Action Models for Long-Horizon Imagination and Planning},\n  author        = {Khorrambakht, R. and Amigo, Joseph and Lebel, F{\\'e}lix and Seetoo, Leon and Ponce, Jean and Li, Zhenzhen and Righetti, Ludovic},\n  year          = {2026},\n  eprint        = {2610.05483},\n  archiveprefix = {arXiv}\n}"
     },
     {
+      "key": "koksal2026flockworld",
+      "title": "FlockWorld: Toward Population-Scale Multi-Agent Video World Models through Artificial Life Simulation",
+      "authors": [
+        "Meryem Koksal",
+        "Yunzhe Wang",
+        "Volkan Ustun"
+      ],
+      "authorsShort": "Meryem Koksal et al.",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.34564",
+      "category": "world-models",
+      "bibtex": "@misc{koksal2026flockworld,\n  title         = {{FlockWorld}: Toward Population-Scale Multi-Agent Video World Models through Artificial Life Simulation},\n  author        = {Koksal, Meryem and Wang, Yunzhe and Ustun, Volkan},\n  year          = {2026},\n  eprint        = {2610.34564},\n  archiveprefix = {arXiv}\n}",
+      "resources": {
+        "code": "https://github.com/wangyz1999/flockworld"
+      }
+    },
+    {
       "key": "lipman2023flow",
       "title": "Flow Matching for Generative Modeling",
       "authors": [
