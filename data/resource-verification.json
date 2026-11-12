@@ -1,6 +1,6 @@
 {
   "checkedOn": "2026-10-14",
-  "scope": "669 cited bibliographic records. Existing resource-verification evidence is retained; new-resource checks are dated individually.",
+  "scope": "670 cited bibliographic records. Existing resource-verification evidence is retained; new-resource checks are dated individually.",
   "papers": [
     {
       "key": "marr1982vision",
@@ -8137,6 +8137,18 @@
         "code": {
           "url": "https://github.com/alexlee-gk/video_prediction",
           "source": "https://alexlee-gk.github.io/video_prediction/"
+        }
+      }
+    },
+    {
+      "key": "koksal2026flockworld",
+      "paper": "https://arxiv.org/abs/2610.34564",
+      "checkedOn": "2026-11-12",
+      "status": "verified_resources",
+      "resources": {
+        "code": {
+          "url": "https://github.com/wangyz1999/flockworld",
+          "source": "https://github.com/wangyz1999/flockworld"
         }
       }
     }
